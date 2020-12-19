@@ -41,7 +41,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/start"
-            android:textColor="@color/orange95"
+            android:textColor="@color/orange"
             android:textSize="24sp" />
     </LinearLayout>
 </RelativeLayout>
