@@ -26,6 +26,38 @@
             android:text="X"
             android:textStyle="bold" />
 
+        <ImageView
+            android:id="@+id/preview_img"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="60"
+            android:src="@drawable/preview_img_one" />
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="30"
+            android:text="@string/level_one"
+            android:textColor="@color/orange"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="10"
+            android:background="@drawable/button_stroke_orange95_press_while"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/text_continue"
+            android:textAllCaps="false"
+            android:textColor="@color/orange"
+            android:textSize="24sp" />
+
     </LinearLayout>
 
 </LinearLayout>
