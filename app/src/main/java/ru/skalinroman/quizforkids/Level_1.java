@@ -60,8 +60,6 @@ public class Level_1 extends AppCompatActivity {
         });
         // Кнопка которая закрывает диалоговое окно - конец
 
-        dialog.show(); // Показать диалоговое окно
-
         // Кнопка "Продолжить - начало
         Button button_continue = (Button) dialog.findViewById(R.id.button_continue);
         button_continue.setOnClickListener(new View.OnClickListener() {
@@ -70,8 +68,26 @@ public class Level_1 extends AppCompatActivity {
                 dialog.dismiss(); // Закрываем диалоговое окно
             }
         });
-
         // Кнопка "Продолжить - конец
+
+        dialog.show(); // Показать диалоговое окно
+
+        // Кнопка "Назад" - начало
+        Button button_back = (Button) findViewById(R.id.but_back);
+        button_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Обрабатываем нажатие кнопка "Назад" - начало
+                try {
+                    Intent intent = new Intent(Level_1.this, GameLevels.class);
+                    startActivity(intent);
+                    finish();
+                } catch (Exception e) {
+                }
+                // Обрабатываем нажатие кнопка "Назад" - конец
+            }
+        });
+        // Кнопка "Назад" - конец
     }
 
     // Системная кнопка "Назад" - начало
