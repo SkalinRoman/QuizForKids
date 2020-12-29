@@ -10,24 +10,43 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class Level_1 extends AppCompatActivity {
 
     Dialog dialog;
+
+    public int numberLeft; // Переменная для левой картинки + текст
+    public int numberRight; // Переменная для правой картинки + текст
+    public int count = 0; // Счетчик правильных ответов
+    Array array = new Array(); // Создали новый объект класса Array
+    Random random = new Random(); // Для генерации случайных чисел
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.universal);
 
+        // Создаем переменную text_levels
+        TextView text_levels = findViewById(R.id.text_levels);
+        text_levels.setText(R.string.level1);  // Установили текст
+
         final ImageView img_left = (ImageView) findViewById(R.id.amg_left);
         img_left.setClipToOutline(true);   // Код, который скругляет углы левой картинки
 
         final ImageView img_right = (ImageView) findViewById(R.id.amg_right);
         img_right.setClipToOutline(true);   // Код, который скругляет углы правой картинки
+
+        // Путь к левой TextView
+        final TextView text_left = findViewById(R.id.text_left);
+        // Путь к правой TextView
+        final TextView text_right = findViewById(R.id.text_right);
 
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -88,6 +107,24 @@ public class Level_1 extends AppCompatActivity {
             }
         });
         // Кнопка "Назад" - конец
+
+        // Подключаем анимацию - начало
+        final Animation a = AnimationUtils.loadAnimation(Level_1.this, R.anim.alpha);
+        // Подключаем анимацию - конец
+
+        numberLeft = random.nextInt(10); // Генерируем случайное число от 0 до 9
+        img_left.setImageResource(array.images1[numberLeft]); // Достаем из массива картинку
+        text_left.setText(array.texts1[numberLeft]); // Достаем из массива текст
+
+        numberRight = random.nextInt(10); // Генерируем случайное число от 0 до 9
+        // Цикл с предусловием, проверяющий равенство чисел - начало
+        while (numberLeft == numberRight) {
+            numberRight = random.nextInt(10);
+        }
+        // Цикл с предусловием, проверяющий равенство чисел - конец
+
+        img_right.setImageResource(array.images1[numberRight]); // Достаем из массива картинку
+        text_right.setText(array.texts1[numberRight]); // Достаем из массива текст
     }
 
     // Системная кнопка "Назад" - начало
