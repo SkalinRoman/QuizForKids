@@ -1,7 +1,5 @@
 package ru.skalinroman.quizforkids;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -17,16 +15,16 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.Random;
 
-public class Level_1 extends AppCompatActivity {
-
-    Dialog dialog;
-    Dialog dialogEnd;
+public class Level_2 extends AppCompatActivity {
 
     public int numberLeft; // Переменная для левой картинки + текст
     public int numberRight; // Переменная для правой картинки + текст
     public int count = 0; // Счетчик правильных ответов
+    Dialog dialog;
     Array array = new Array(); // Создали новый объект класса Array
     Random random = new Random(); // Для генерации случайных чисел
 
@@ -69,7 +67,7 @@ public class Level_1 extends AppCompatActivity {
                 // Обрабатываем нажатие кнопки - начало
                 try {
                     // Вернуться назад к выбору уровня - начало
-                    Intent intent = new Intent(Level_1.this, GameLevels.class); // Создаем намерение для перехода
+                    Intent intent = new Intent(Level_2.this, GameLevels.class); // Создаем намерение для перехода
                     startActivity(intent); // Старт намерения
                     finish(); // Закрываем этот класс
                     // Вернуться назад к выбору уровня - конец
@@ -93,52 +91,6 @@ public class Level_1 extends AppCompatActivity {
 
         dialog.show(); // Показать диалоговое окно
 
-        //__________
-        // Вызов диалогового окна в конце игры
-        dialogEnd = new Dialog(this);  // Создаем новое диалоговое окно
-        dialogEnd.requestWindowFeature(Window.FEATURE_NO_TITLE); // Скрываем заголовок
-        dialogEnd.setContentView(R.layout.dialog_end); // Путь к макету диалогового окна
-        dialogEnd.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT)); // Прозрачный фон диалогового окна
-        dialogEnd.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
-        dialogEnd.setCancelable(false); // Окно нельзя закрыть системной кнопкой назад
-
-        // Кнопка которая закрывает диалоговое окно - начало
-        TextView button_close_2 = (TextView) dialogEnd.findViewById(R.id.button_close);
-        button_close_2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Обрабатываем нажатие кнопки - начало
-                try {
-                    // Вернуться назад к выбору уровня - начало
-                    Intent intent = new Intent(Level_1.this, GameLevels.class); // Создаем намерение для перехода
-                    startActivity(intent); // Старт намерения
-                    finish(); // Закрываем этот класс
-                    // Вернуться назад к выбору уровня - конец
-                } catch (Exception e) {
-                }
-                dialogEnd.dismiss(); // Закрываем диалоговое окно
-                // Обрабатываем нажатие кнопки - конец
-            }
-        });
-        // Кнопка которая закрывает диалоговое окно - конец
-
-        // Кнопка "Продолжить - начало
-        Button button_continue_2 = (Button) dialogEnd.findViewById(R.id.button_continue);
-        button_continue_2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    Intent intent = new Intent(Level_1.this, Level_2.class);
-                    startActivity(intent);
-                    finish();
-                } catch (Exception e) {
-                }
-                dialogEnd.dismiss(); // Закрываем диалоговое окно
-            }
-        });
-        // Кнопка "Продолжить - конец
-        //__________
-
         // Кнопка "Назад" - начало
         Button button_back = (Button) findViewById(R.id.but_back);
         button_back.setOnClickListener(new View.OnClickListener() {
@@ -146,7 +98,7 @@ public class Level_1 extends AppCompatActivity {
             public void onClick(View v) {
                 // Обрабатываем нажатие кнопка "Назад" - начало
                 try {
-                    Intent intent = new Intent(Level_1.this, GameLevels.class);
+                    Intent intent = new Intent(Level_2.this, GameLevels.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception e) {
@@ -182,7 +134,7 @@ public class Level_1 extends AppCompatActivity {
         // Массив для прогресса игры - конец
 
         // Подключаем анимацию - начало
-        final Animation a = AnimationUtils.loadAnimation(Level_1.this, R.anim.alpha);
+        final Animation a = AnimationUtils.loadAnimation(Level_2.this, R.anim.alpha);
         // Подключаем анимацию - конец
 
         numberLeft = random.nextInt(10); // Генерируем случайное число от 0 до 9
@@ -259,7 +211,6 @@ public class Level_1 extends AppCompatActivity {
                     // Если отпустил палец - конец
                     if (count == 20) {
                         // Выход из уровня
-                        dialogEnd.show(); // Показать диалоговое окно
                     } else {
                         numberLeft = random.nextInt(10); // Генерируем случайное число от 0 до 9
                         img_left.setImageResource(array.images1[numberLeft]); // Достаем из массива картинку
@@ -346,7 +297,6 @@ public class Level_1 extends AppCompatActivity {
                     // Если отпустил палец - конец
                     if (count == 20) {
                         // Выход из уровня
-                        dialogEnd.show(); // Показать диалоговое окно
                     } else {
                         numberLeft = random.nextInt(10); // Генерируем случайное число от 0 до 9
                         img_left.setImageResource(array.images1[numberLeft]); // Достаем из массива картинку
@@ -378,7 +328,7 @@ public class Level_1 extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         try {
-            Intent intent = new Intent(Level_1.this, GameLevels.class);
+            Intent intent = new Intent(Level_2.this, GameLevels.class);
             startActivity(intent);
             finish();
         } catch (Exception e) {

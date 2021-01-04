@@ -20,30 +20,27 @@
             android:id="@+id/button_close"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_gravity="start"
+            android:layout_gravity="end"
             android:background="@drawable/button_stroke_orange95_press_while"
             android:gravity="center"
-            android:text="&#60;"
+            android:text="X"
             android:textColor="@color/orange"
             android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/preview_img"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="60"
-            android:src="@drawable/preview_img_one" />
-
-        <TextView
-            android:id="@+id/text_description"
+        <ScrollView
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginTop="10dp"
-            android:layout_weight="30"
-            android:text="@string/level_one"
-            android:textColor="@color/blue"
-            android:textSize="24sp" />
+            android:layout_weight="90">
+
+            <TextView
+                android:id="@+id/text_description_end"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/level_one_end"
+                android:textColor="@color/blue"
+                android:textSize="24sp" />
+        </ScrollView>
 
         <Button
             android:id="@+id/button_continue"
