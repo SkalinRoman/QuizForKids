@@ -14,7 +14,22 @@
     <string name="lvl1_text7">Семь</string>
     <string name="lvl1_text8">Восемь</string>
     <string name="lvl1_text9">Девять</string>
-    <string name="level_one">"Выбери цифру, которая больше.\nЧтобы пройти уровень набери 20 очков."</string>
-    <string name="level_one_end">"Поздравляем!\nВы прошли первый уровень!\nПродолжайте в том же духе!"</string>
+    <string name="level_one">Выбери цифру, которая больше.\nЧтобы пройти уровень набери 20 очков.</string>
+    <string name="level_one_end">"Поздравляем, уровень пройден!\n
+        А знаете ли вы, что число 7 считается самым счастливым числом. Существует 7 дней в неделе, 7 континентов, 7 цветов радуги, 7 музыкальных нот, 7 дней Творения и является любимым числом людей во всем мире!"</string>
     <string name="text_continue">Продолжить</string>
+    <string name="level_two">Выбери римскую цифру, которая больше.\nЧтобы пройти уровень набери 20 очков.</string>
+    <string name="level2">Уровень 2</string>
+    <string name="lvl2_text1"> I</string>
+    <string name="lvl2_text2">II</string>
+    <string name="lvl2_text3">III</string>
+    <string name="lvl2_text4">IV</string>
+    <string name="lvl2_text5">V</string>
+    <string name="lvl2_text6">VI</string>
+    <string name="lvl2_text7">VII</string>
+    <string name="lvl2_text8">VIII</string>
+    <string name="lvl2_text9">IX</string>
+    <string name="lvl2_text10">X</string>
+    <string name="level_two_end">"Поздравляем, уровень пройден!\n
+        А знаете ли вы, что в римских цифрах отсутствует ноль?"</string>
 </resources>
