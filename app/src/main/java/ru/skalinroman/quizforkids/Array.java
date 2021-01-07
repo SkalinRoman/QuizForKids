@@ -56,4 +56,32 @@ public class Array {
             R.string.lvl2_text10
     };
     // Массив для второго уровня - конец
+
+    // Массив для третьего уровня - начало
+    final int[] images3 = {
+            R.drawable.threelevel_one,
+            R.drawable.threelevel_two,
+            R.drawable.threelevel_three,
+            R.drawable.threelevel_four,
+            R.drawable.threelevel_five,
+            R.drawable.threelevel_six,
+            R.drawable.threelevel_seven,
+            R.drawable.threelevel_eight,
+            R.drawable.threelevel_nine,
+            R.drawable.threelevel_ten
+    };
+
+    final int[] texts3 = {
+            R.string.lvl3_text1,
+            R.string.lvl3_text2,
+            R.string.lvl3_text3,
+            R.string.lvl3_text4,
+            R.string.lvl3_text5,
+            R.string.lvl3_text6,
+            R.string.lvl3_text7,
+            R.string.lvl3_text8,
+            R.string.lvl3_text9,
+            R.string.lvl3_text10
+    };
+    // Массив для третьего уровня - конец
 }

@@ -20,7 +20,7 @@
     <string name="text_continue">Продолжить</string>
     <string name="level_two">Выбери римскую цифру, которая больше.\nЧтобы пройти уровень набери 20 очков.</string>
     <string name="level2">Уровень 2</string>
-    <string name="lvl2_text1"> I</string>
+    <string name="lvl2_text1">I</string>
     <string name="lvl2_text2">II</string>
     <string name="lvl2_text3">III</string>
     <string name="lvl2_text4">IV</string>
@@ -32,4 +32,16 @@
     <string name="lvl2_text10">X</string>
     <string name="level_two_end">"Поздравляем, уровень пройден!\n
         А знаете ли вы, что в римских цифрах отсутствует ноль?"</string>
+    <string name="level_three">Выбери выражение, результат которого больше.\nЧтобы пройти уровень набери 20 очков.</string>
+    <string name="level3">Уровень 3</string>
+    <string name="lvl3_text1">6-5</string>
+    <string name="lvl3_text2">8-6</string>
+    <string name="lvl3_text3">7-4</string>
+    <string name="lvl3_text4">9-5</string>
+    <string name="lvl3_text5">1+4</string>
+    <string name="lvl3_text6">9-3</string>
+    <string name="lvl3_text7">4+3</string>
+    <string name="lvl3_text8">3+5</string>
+    <string name="lvl3_text9">9+0</string>
+    <string name="lvl3_text10">8+2</string>
 </resources>
