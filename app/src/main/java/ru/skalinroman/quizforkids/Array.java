@@ -131,7 +131,55 @@ public class Array {
             R.string.lvl4_text19,
             R.string.lvl4_text20
     };
+    // Массив для 4 уровня - конец
 
     final int[] strong = {0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1};
-    // Массив для 4 уровня - конец
+
+    // Массив для 5 уровня - начало
+    final int[] images5 = {
+            R.drawable.five_f_one,
+            R.drawable.five_t_one,
+            R.drawable.five_f_two,
+            R.drawable.five_t_two,
+            R.drawable.five_f_three,
+            R.drawable.five_t_three,
+            R.drawable.five_f_four,
+            R.drawable.five_t_four,
+            R.drawable.five_f_five,
+            R.drawable.five_t_five,
+            R.drawable.five_f_six,
+            R.drawable.five_t_six,
+            R.drawable.five_f_seven,
+            R.drawable.five_t_seven,
+            R.drawable.five_f_eight,
+            R.drawable.five_t_eight,
+            R.drawable.five_f_nine,
+            R.drawable.five_t_nine,
+            R.drawable.five_f_ten,
+            R.drawable.five_t_ten
+    };
+
+    final int[] texts5 = {
+            R.string.lvl5_text1,
+            R.string.lvl5_text2,
+            R.string.lvl5_text3,
+            R.string.lvl5_text4,
+            R.string.lvl5_text5,
+            R.string.lvl5_text6,
+            R.string.lvl5_text7,
+            R.string.lvl5_text8,
+            R.string.lvl5_text9,
+            R.string.lvl5_text10,
+            R.string.lvl5_text11,
+            R.string.lvl5_text12,
+            R.string.lvl5_text13,
+            R.string.lvl5_text14,
+            R.string.lvl5_text15,
+            R.string.lvl5_text16,
+            R.string.lvl5_text17,
+            R.string.lvl5_text18,
+            R.string.lvl5_text19,
+            R.string.lvl5_text20
+    };
+    // Массив для 5 уровня - конец
 }

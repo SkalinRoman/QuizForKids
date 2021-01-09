@@ -71,4 +71,28 @@
     <string name="lvl4_text20">Двадцать</string>
     <string name="level_four_end">"Поздравляем, уровень пройден!\n
         А знаете ли вы, что ноль относится к четным цифрам?"</string>
+    <string name="level_five">Выбери что-нибудь съедобное.\nЧтобы пройти уровень набери 20 очков.</string>
+    <string name="level5">Уровень 5</string>
+    <string name="lvl5_text1">Сумка</string>
+    <string name="lvl5_text2">Яблоко</string>
+    <string name="lvl5_text3">Рубашка</string>
+    <string name="lvl5_text4">Лимон</string>
+    <string name="lvl5_text5">Сапог</string>
+    <string name="lvl5_text6">Виноград</string>
+    <string name="lvl5_text7">Автомобиль</string>
+    <string name="lvl5_text8">Картофель фри</string>
+    <string name="lvl5_text9">Книга</string>
+    <string name="lvl5_text10">Киви</string>
+    <string name="lvl5_text11">Велосипед</string>
+    <string name="lvl5_text12">Черешня</string>
+    <string name="lvl5_text13">Ель</string>
+    <string name="lvl5_text14">Яичница</string>
+    <string name="lvl5_text15">Листок</string>
+    <string name="lvl5_text16">Хлеб</string>
+    <string name="lvl5_text17">Зонтик</string>
+    <string name="lvl5_text18">Мороженое</string>
+    <string name="lvl5_text19">Краски</string>
+    <string name="lvl5_text20">Помидор</string>
+    <string name="level_five_end">"Поздравляем, уровень пройден!\n
+        Известно, что многие крокодилы глотают камни. Но не потому что для них они съедобны. Камни помогают им быстрее погружаться в воду и удерживаться на дне."</string>
 </resources>
