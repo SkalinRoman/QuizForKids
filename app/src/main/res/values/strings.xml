@@ -2,6 +2,7 @@
     <string name="app_name">Quiz for Kids</string>
     <string name="start">Начать</string>
     <string name="back">Назад</string>
+    <string name="close">Закрыть</string>
     <string name="level">Уровень:</string>
     <string name="level1">Уровень 1</string>
     <string name="lvl1_text0">Ноль</string>
@@ -34,14 +35,40 @@
         А знаете ли вы, что в римских цифрах отсутствует ноль?"</string>
     <string name="level_three">Выбери выражение, результат которого больше.\nЧтобы пройти уровень набери 20 очков.</string>
     <string name="level3">Уровень 3</string>
-    <string name="lvl3_text1">6-5</string>
-    <string name="lvl3_text2">8-6</string>
-    <string name="lvl3_text3">7-4</string>
-    <string name="lvl3_text4">9-5</string>
-    <string name="lvl3_text5">1+4</string>
-    <string name="lvl3_text6">9-3</string>
-    <string name="lvl3_text7">4+3</string>
-    <string name="lvl3_text8">3+5</string>
-    <string name="lvl3_text9">9+0</string>
-    <string name="lvl3_text10">8+2</string>
+    <string name="lvl3_text1">3 - 2</string>
+    <string name="lvl3_text2">8 - 6</string>
+    <string name="lvl3_text3">2 + 1</string>
+    <string name="lvl3_text4">7 - 3</string>
+    <string name="lvl3_text5">1 + 4</string>
+    <string name="lvl3_text6">9 - 3</string>
+    <string name="lvl3_text7">4 + 3</string>
+    <string name="lvl3_text8">9 - 1</string>
+    <string name="lvl3_text9">4 + 5</string>
+    <string name="lvl3_text10">2 + 8</string>
+    <string name="level_three_end">"Поздравляем, уровень пройден!\n
+        А знаете ли вы, что кроме сложения и вычитания, есть еще выражения на умножение и деление?"</string>
+    <string name="level_four">Выбери четную цифру.\nЧтобы пройти уровень набери 20 очков.</string>
+    <string name="level4">Уровень 4</string>
+    <string name="lvl4_text1">Один</string>
+    <string name="lvl4_text2">Два</string>
+    <string name="lvl4_text3">Три</string>
+    <string name="lvl4_text4">Четыре</string>
+    <string name="lvl4_text5">Пять</string>
+    <string name="lvl4_text6">Шесть</string>
+    <string name="lvl4_text7">Семь</string>
+    <string name="lvl4_text8">Восемь</string>
+    <string name="lvl4_text9">Девять</string>
+    <string name="lvl4_text10">Десять</string>
+    <string name="lvl4_text11">Одиннадцать</string>
+    <string name="lvl4_text12">Двенадцать</string>
+    <string name="lvl4_text13">Тринадцать</string>
+    <string name="lvl4_text14">Четырнадцать</string>
+    <string name="lvl4_text15">Пятнадцать</string>
+    <string name="lvl4_text16">Шестнадцать</string>
+    <string name="lvl4_text17">Семнадцать</string>
+    <string name="lvl4_text18">Восемнадцать</string>
+    <string name="lvl4_text19">Девятнадцать</string>
+    <string name="lvl4_text20">Двадцать</string>
+    <string name="level_four_end">"Поздравляем, уровень пройден!\n
+        А знаете ли вы, что ноль относится к четным цифрам?"</string>
 </resources>

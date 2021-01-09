@@ -13,6 +13,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -50,8 +51,13 @@ public class Level_3 extends AppCompatActivity {
         final TextView text_right = findViewById(R.id.text_right);
 
         Window w = getWindow();
-        w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        // w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+
+        // Устанавливаем фон - начало
+        ImageView background = (ImageView) findViewById(R.id.background);
+        background.setImageResource(R.drawable.background_three_four);
+        // Устанавливаем фон - конец
 
         // Вызов диалогового окна в начале игры
         dialog = new Dialog(this);  // Создаем новое диалоговое окно
@@ -64,6 +70,11 @@ public class Level_3 extends AppCompatActivity {
         ImageView previewimg = (ImageView) dialog.findViewById(R.id.preview_img);
         previewimg.setImageResource(R.drawable.preview_img_three);
         // Устанавливаем картинку в диалоговое окно - конец
+
+        // Устанавливаем фон диалогового окна - начало
+        LinearLayout dialogfon = (LinearLayout) dialog.findViewById(R.id.dialog_fon);
+        dialogfon.setBackgroundResource(R.drawable.background_three_four);
+        // Устанавливаем фон диалогового окна - конец
 
         // Устанавливае описание задания - начало
         TextView textdescription = (TextView) dialog.findViewById(R.id.text_description);
@@ -111,9 +122,14 @@ public class Level_3 extends AppCompatActivity {
         dialogEnd.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
         dialogEnd.setCancelable(false); // Окно нельзя закрыть системной кнопкой назад
 
+        // Устанавливаем фон диалогового окна - начало
+        LinearLayout dialogfonEnd = (LinearLayout) dialogEnd.findViewById(R.id.dialog_fon_end);
+        dialogfonEnd.setBackgroundResource(R.drawable.preview_background_three_four);
+        // Устанавливаем фон диалогового окна - конец
+
         // Интересный факт - начало
         TextView textdescriptionEnd = (TextView) dialogEnd.findViewById(R.id.text_description_end);
-        textdescriptionEnd.setText(R.string.level_two_end);
+        textdescriptionEnd.setText(R.string.level_three_end);
         // Интересный факт - конец
 
         // Кнопка которая закрывает диалоговое окно - начало
@@ -142,7 +158,7 @@ public class Level_3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(Level_3.this, Level_3.class);
+                    Intent intent = new Intent(Level_3.this, Level_4.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception e) {

@@ -33,7 +33,7 @@ public class GameLevels extends AppCompatActivity {
             }
         });
 
-        // Кнопка для перехода на первый уровень - начало
+        // Кнопка для перехода на 1 уровень - начало
         TextView textView1 = (TextView) findViewById(R.id.textView_1);
         textView1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,9 +46,9 @@ public class GameLevels extends AppCompatActivity {
                 }
             }
         });
-        // Кнопка для перехода на первый уровень - конец
+        // Кнопка для перехода на 1 уровень - конец
 
-        // Кнопка для перехода на второй уровень - начало
+        // Кнопка для перехода на 2 уровень - начало
         TextView textView2 = (TextView) findViewById(R.id.textView_2);
         textView2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,9 +61,9 @@ public class GameLevels extends AppCompatActivity {
                 }
             }
         });
-        // Кнопка для перехода на второй уровень - конец
+        // Кнопка для перехода на 2 уровень - конец
 
-        // Кнопка для перехода на третий уровень - начало
+        // Кнопка для перехода на 3 уровень - начало
         TextView textView3 = (TextView) findViewById(R.id.textView_3);
         textView3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,7 +76,22 @@ public class GameLevels extends AppCompatActivity {
                 }
             }
         });
-        // Кнопка для перехода на третий уровень - конец
+        // Кнопка для перехода на 3 уровень - конец
+
+        // Кнопка для перехода на 4 уровень - начало
+        TextView textView4 = (TextView) findViewById(R.id.textView_4);
+        textView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GameLevels.this, Level_4.class);
+                    startActivity(intent);
+                    finish();
+                } catch (Exception e) {
+                }
+            }
+        });
+        // Кнопка для перехода на 4 уровень - конец
     }
 
     // Системная кнопка "Назад" - начало

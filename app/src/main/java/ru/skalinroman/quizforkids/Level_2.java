@@ -50,7 +50,7 @@ public class Level_2 extends AppCompatActivity {
         final TextView text_right = findViewById(R.id.text_right);
 
         Window w = getWindow();
-        w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        // w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
         // Вызов диалогового окна в начале игры

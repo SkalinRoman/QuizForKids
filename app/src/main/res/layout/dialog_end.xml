@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/dialog_fon"
+    android:id="@+id/dialog_fon_end"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:layout_margin="10dp"
-    android:background="@drawable/preview_background_one"
+    android:background="@drawable/preview_background_one_two"
     android:orientation="vertical"
     android:scaleType="centerCrop">
 
@@ -16,16 +16,19 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <TextView
+        <Button
             android:id="@+id/button_close"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:background="@drawable/button_stroke_orange95_press_while"
+            android:background="@drawable/button_stroke_brown_press_brown30"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:gravity="center"
-            android:text="X"
-            android:textColor="@color/green"
-            android:textStyle="bold" />
+            android:text="@string/close"
+            android:textAllCaps="false"
+            android:textColor="@color/brown"
+            android:textSize="24sp" />
 
         <ScrollView
             android:layout_width="wrap_content"
@@ -37,21 +40,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/level_one_end"
-                android:textColor="@color/blue"
+                android:textColor="@color/brown"
                 android:textSize="24sp" />
         </ScrollView>
 
         <Button
             android:id="@+id/button_continue"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/button_stroke_orange95_press_while"
+            android:background="@drawable/button_stroke_brown_press_brown30"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/text_continue"
             android:textAllCaps="false"
-            android:textColor="@color/green"
+            android:textColor="@color/brown"
             android:textSize="24sp" />
     </LinearLayout>
 </LinearLayout>
