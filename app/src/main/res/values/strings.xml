@@ -15,11 +15,11 @@
     <string name="lvl1_text7">Семь</string>
     <string name="lvl1_text8">Восемь</string>
     <string name="lvl1_text9">Девять</string>
-    <string name="level_one">Выбери цифру, которая больше.\nЧтобы пройти уровень набери 20 очков.</string>
+    <string name="level_one">Выбери цифру, которая больше</string>
     <string name="level_one_end">"Поздравляем, уровень пройден!\n
         А знаете ли вы, что число 7 считается самым счастливым числом. Существует 7 дней в неделе, 7 континентов, 7 цветов радуги, 7 музыкальных нот, 7 дней Творения и является любимым числом людей во всем мире!"</string>
     <string name="text_continue">Продолжить</string>
-    <string name="level_two">Выбери римскую цифру, которая больше.\nЧтобы пройти уровень набери 20 очков.</string>
+    <string name="level_two">Выбери римскую цифру, которая больше</string>
     <string name="level2">Уровень 2</string>
     <string name="lvl2_text1">I</string>
     <string name="lvl2_text2">II</string>
@@ -33,7 +33,7 @@
     <string name="lvl2_text10">X</string>
     <string name="level_two_end">"Поздравляем, уровень пройден!\n
         А знаете ли вы, что в римских цифрах отсутствует ноль?"</string>
-    <string name="level_three">Выбери выражение, результат которого больше.\nЧтобы пройти уровень набери 20 очков.</string>
+    <string name="level_three">Что больше?</string>
     <string name="level3">Уровень 3</string>
     <string name="lvl3_text1">3 - 2</string>
     <string name="lvl3_text2">8 - 6</string>
@@ -47,7 +47,7 @@
     <string name="lvl3_text10">2 + 8</string>
     <string name="level_three_end">"Поздравляем, уровень пройден!\n
         А знаете ли вы, что кроме сложения и вычитания, есть еще выражения на умножение и деление?"</string>
-    <string name="level_four">Выбери четную цифру.\nЧтобы пройти уровень набери 20 очков.</string>
+    <string name="level_four">Выбери четную цифру</string>
     <string name="level4">Уровень 4</string>
     <string name="lvl4_text1">Один</string>
     <string name="lvl4_text2">Два</string>
@@ -71,7 +71,7 @@
     <string name="lvl4_text20">Двадцать</string>
     <string name="level_four_end">"Поздравляем, уровень пройден!\n
         А знаете ли вы, что ноль относится к четным цифрам?"</string>
-    <string name="level_five">Выбери что-нибудь съедобное.\nЧтобы пройти уровень набери 20 очков.</string>
+    <string name="level_five">Что можно съесть?</string>
     <string name="level5">Уровень 5</string>
     <string name="lvl5_text1">Сумка</string>
     <string name="lvl5_text2">Яблоко</string>
