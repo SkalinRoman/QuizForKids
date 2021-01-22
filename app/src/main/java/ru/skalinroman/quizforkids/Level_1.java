@@ -104,23 +104,23 @@ public class Level_1 extends AppCompatActivity {
         dialogEnd.setCancelable(false); // Окно нельзя закрыть системной кнопкой назад
 
         // Кнопка которая закрывает диалоговое окно - начало
-        TextView button_close_2 = (TextView) dialogEnd.findViewById(R.id.button_close);
-        button_close_2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Обрабатываем нажатие кнопки - начало
-                try {
-                    // Вернуться назад к выбору уровня - начало
-                    Intent intent = new Intent(Level_1.this, GameLevels.class); // Создаем намерение для перехода
-                    startActivity(intent); // Старт намерения
-                    finish(); // Закрываем этот класс
-                    // Вернуться назад к выбору уровня - конец
-                } catch (Exception e) {
-                }
-                dialogEnd.dismiss(); // Закрываем диалоговое окно
-                // Обрабатываем нажатие кнопки - конец
-            }
-        });
+        //   TextView button_close_2 = (TextView) dialogEnd.findViewById(R.id.button_close);
+        //  button_close_2.setOnClickListener(new View.OnClickListener() {
+        //      @Override
+        //      public void onClick(View v) {
+        // Обрабатываем нажатие кнопки - начало
+        //         try {
+        // Вернуться назад к выбору уровня - начало
+        //             Intent intent = new Intent(Level_1.this, GameLevels.class); // Создаем намерение для перехода
+        //              startActivity(intent); // Старт намерения
+        //             finish(); // Закрываем этот класс
+        // Вернуться назад к выбору уровня - конец
+        //         } catch (Exception e) {
+        //        }
+        //        dialogEnd.dismiss(); // Закрываем диалоговое окно
+        // Обрабатываем нажатие кнопки - конец
+        //     }
+        //   });
         // Кнопка которая закрывает диалоговое окно - конец
 
         // Кнопка "Продолжить - начало
