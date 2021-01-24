@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:layout_margin="10dp"
-    android:background="@drawable/preview_background_one_new"
+    android:background="@drawable/preview_background_one"
     android:orientation="vertical"
     android:scaleType="centerCrop">
 
@@ -33,7 +33,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/level_one_end"
+                android:id="@+id/level_description_end"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"

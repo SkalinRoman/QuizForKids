@@ -13,6 +13,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,7 +25,6 @@ public class Level_2 extends AppCompatActivity {
     public int numberLeft; // Переменная для левой картинки + текст
     public int numberRight; // Переменная для правой картинки + текст
     public int count = 0; // Счетчик правильных ответов
-    Dialog dialog;
     Dialog dialogEnd;
     Array array = new Array(); // Создали новый объект класса Array
     Random random = new Random(); // Для генерации случайных чисел
@@ -53,56 +53,16 @@ public class Level_2 extends AppCompatActivity {
         w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
-        // Вызов диалогового окна в начале игры
-        //   dialog = new Dialog(this);  // Создаем новое диалоговое окно
-        //   dialog.requestWindowFeature(Window.FEATURE_NO_TITLE); // Скрываем заголовок
-        //   dialog.setContentView(R.layout.preview_dialog); // Путь к макету диалогового окна
-        //   dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT)); // Прозрачный фон диалогового окна
-        //   dialog.setCancelable(false); // Окно нельзя закрыть системной кнопкой назад
-
-        // Устанавливаем картинку в диалоговое окно - начало
-        //    ImageView previewimg = (ImageView) dialog.findViewById(R.id.preview_img);
-        //   previewimg.setImageResource(R.drawable.preview_img_two);
-        // Устанавливаем картинку в диалоговое окно - конец
+        // Устанавливаем фон - начало
+        ImageView background = (ImageView) findViewById(R.id.background);
+        background.setImageResource(R.drawable.background_two);
+        // Устанавливаем фон - конец
 
         // Устанавливае описание задания - начало
-        TextView textdescription = (TextView) findViewById(R.id.exercise);
-        textdescription.setText(R.string.level_two);
+        TextView textDescription = (TextView) findViewById(R.id.exercise);
+        textDescription.setText(R.string.level_two);
         // Устанавливае описание задания - конец
 
-        // Кнопка которая закрывает диалоговое окно - начало
-        //    TextView button_close = (TextView) dialog.findViewById(R.id.button_close);
-        //    button_close.setOnClickListener(new View.OnClickListener() {
-        //        @Override
-        //       public void onClick(View v) {
-        // Обрабатываем нажатие кнопки - начало
-        //           try {
-        // Вернуться назад к выбору уровня - начало
-        //               Intent intent = new Intent(Level_2.this, GameLevels.class); // Создаем намерение для перехода
-        //               startActivity(intent); // Старт намерения
-        //               finish(); // Закрываем этот класс
-        // Вернуться назад к выбору уровня - конец
-        //           } catch (Exception e) {
-        //           }
-        //           dialog.dismiss(); // Закрываем диалоговое окно
-        // Обрабатываем нажатие кнопки - конец
-        //       }
-        //   });
-        // Кнопка которая закрывает диалоговое окно - конец
-
-        // Кнопка "Продолжить - начало
-        //    Button button_continue = (Button) dialog.findViewById(R.id.button_continue);
-        //    button_continue.setOnClickListener(new View.OnClickListener() {
-        //        @Override
-        //        public void onClick(View v) {
-        //            dialog.dismiss(); // Закрываем диалоговое окно
-        //        }
-        //    });
-        // Кнопка "Продолжить - конец
-
-        //   dialog.show(); // Показать диалоговое окно
-
-        //__________
         // Вызов диалогового окна в конце игры
         dialogEnd = new Dialog(this);  // Создаем новое диалоговое окно
         dialogEnd.requestWindowFeature(Window.FEATURE_NO_TITLE); // Скрываем заголовок
@@ -111,32 +71,17 @@ public class Level_2 extends AppCompatActivity {
         dialogEnd.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
         dialogEnd.setCancelable(false); // Окно нельзя закрыть системной кнопкой назад
 
+        // Устанавливаем фон диалогового окна - начало
+        LinearLayout dialogFonEnd = (LinearLayout) dialogEnd.findViewById(R.id.dialog_fon_end);
+        dialogFonEnd.setBackgroundResource(R.drawable.preview_background_two);
+        // Устанавливаем фон диалогового окна - конец
+
         // Интересный факт - начало
-        //  TextView textdescriptionEnd = (TextView) dialogEnd.findViewById(R.id.text_description_end);
-        //  textdescriptionEnd.setText(R.string.level_two_end);
+        TextView textDescriptionEnd = (TextView) dialogEnd.findViewById(R.id.level_description_end);
+        textDescriptionEnd.setText(R.string.level_two_end);
         // Интересный факт - конец
 
-        // Кнопка которая закрывает диалоговое окно - начало
-        //  TextView button_close_2 = (TextView) dialogEnd.findViewById(R.id.button_close);
-        // button_close_2.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //     public void onClick(View v) {
-        // Обрабатываем нажатие кнопки - начало
-        //        try {
-        // Вернуться назад к выбору уровня - начало
-        //            Intent intent = new Intent(Level_2.this, GameLevels.class); // Создаем намерение для перехода
-        //            startActivity(intent); // Старт намерения
-        //            finish(); // Закрываем этот класс
-        // Вернуться назад к выбору уровня - конец
-        //        } catch (Exception e) {
-        //         }
-        //         dialogEnd.dismiss(); // Закрываем диалоговое окно
-        // Обрабатываем нажатие кнопки - конец
-        //     }
-        //   });
-        // Кнопка которая закрывает диалоговое окно - конец
-
-        // Кнопка "Продолжить - начало
+        // Кнопка "Продолжить" диалоговое окно - начало
         Button button_continue_2 = (Button) dialogEnd.findViewById(R.id.button_continue);
         button_continue_2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -150,8 +95,7 @@ public class Level_2 extends AppCompatActivity {
                 dialogEnd.dismiss(); // Закрываем диалоговое окно
             }
         });
-        // Кнопка "Продолжить - конец
-        //__________
+        // Кнопка "Продолжить" диалоговое окно - конец
 
         // Кнопка "Назад" - начало
         Button button_back = (Button) findViewById(R.id.but_back);
