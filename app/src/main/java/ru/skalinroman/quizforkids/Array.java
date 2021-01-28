@@ -1,6 +1,32 @@
 package ru.skalinroman.quizforkids;
 
 public class Array {
+    // Массив для прогресса игры - начало
+    final int[] progressCount = {
+            R.string.count_0,
+            R.string.count_1,
+            R.string.count_2,
+            R.string.count_3,
+            R.string.count_4,
+            R.string.count_5,
+            R.string.count_6,
+            R.string.count_7,
+            R.string.count_8,
+            R.string.count_9,
+            R.string.count_10,
+            R.string.count_11,
+            R.string.count_12,
+            R.string.count_13,
+            R.string.count_14,
+            R.string.count_15,
+            R.string.count_16,
+            R.string.count_17,
+            R.string.count_18,
+            R.string.count_19,
+            R.string.count_20
+    };
+    // Массив для прогресса игры - конец
+
     // Массив для 1 уровня - начало
     final int[] images1 = {
             R.drawable.onelevel_zero,

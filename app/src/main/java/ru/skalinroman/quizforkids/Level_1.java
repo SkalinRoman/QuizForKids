@@ -158,6 +158,8 @@ public class Level_1 extends AppCompatActivity {
                         // Если левая картинка больше
                         if (count < 20) {
                             count++;
+                            TextView tv2 = findViewById(R.id.count);
+                            tv2.setText(array.progressCount[count]);
                         }
                         // Закрашиваем прогресс бледно оранжевым светом - начало
                         for (int i = 0; i < 20; i++) {
@@ -177,8 +179,12 @@ public class Level_1 extends AppCompatActivity {
                         if (count > 0) {
                             if (count == 1) {
                                 count = 0;
+                                TextView tv2 = findViewById(R.id.count);
+                                tv2.setText(array.progressCount[count]);
                             } else {
                                 count = count - 2;
+                                TextView tv2 = findViewById(R.id.count);
+                                tv2.setText(array.progressCount[count]);
                             }
                         }
                         // Закрашиваем прогресс бледно оранжевым светом - начало
@@ -245,6 +251,8 @@ public class Level_1 extends AppCompatActivity {
                         // Если правая картинка больше
                         if (count < 20) {
                             count++;
+                            TextView tv2 = findViewById(R.id.count);
+                            tv2.setText(array.progressCount[count]);
                         }
                         // Закрашиваем прогресс бледно оранжевым светом - начало
                         for (int i = 0; i < 20; i++) {
@@ -264,8 +272,12 @@ public class Level_1 extends AppCompatActivity {
                         if (count > 0) {
                             if (count == 1) {
                                 count = 0;
+                                TextView tv2 = findViewById(R.id.count);
+                                tv2.setText(array.progressCount[count]);
                             } else {
                                 count = count - 2;
+                                TextView tv2 = findViewById(R.id.count);
+                                tv2.setText(array.progressCount[count]);
                             }
                         }
                         // Закрашиваем прогресс бледно оранжевым светом - начало
