@@ -112,4 +112,26 @@
     <string name="lvl5_text19">Сапог</string>
     <string name="lvl5_text20">Шоколад</string>
     <string name="level_five_end">"   Известно, что многие крокодилы глотают камни. Но не потому что для них они съедобны. Камни помогают им быстрее погружаться в воду и удерживаться на дне."</string>
+    <string name="level_six">Выбери все фрукты</string>
+    <string name="level6">Уровень 6</string>
+    <string name="lvl6_text1">Клубника</string>
+    <string name="lvl6_text2">Яблоко</string>
+    <string name="lvl6_text3">Мухомор</string>
+    <string name="lvl6_text4">Груша</string>
+    <string name="lvl6_text5">Арбуз</string>
+    <string name="lvl6_text6">Персик</string>
+    <string name="lvl6_text7">Помидор</string>
+    <string name="lvl6_text8">Лимон</string>
+    <string name="lvl6_text9">Перец</string>
+    <string name="lvl6_text10">Ананас</string>
+    <string name="lvl6_text11">Баклажан</string>
+    <string name="lvl6_text12">Киви</string>
+    <string name="lvl6_text13">Морковь</string>
+    <string name="lvl6_text14">Банан</string>
+    <string name="lvl6_text15">Картофель</string>
+    <string name="lvl6_text16">Авокадо</string>
+    <string name="lvl6_text17">Кукуруза</string>
+    <string name="lvl6_text18">Апельсин</string>
+    <string name="lvl6_text19">Огурец</string>
+    <string name="lvl6_text20">Яблоко</string>
 </resources>

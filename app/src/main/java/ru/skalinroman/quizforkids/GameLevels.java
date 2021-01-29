@@ -107,6 +107,21 @@ public class GameLevels extends AppCompatActivity {
             }
         });
         // Кнопка для перехода на 5 уровень - конец
+
+        // Кнопка для перехода на 6 уровень - начало
+        TextView textView6 = (TextView) findViewById(R.id.textView_6);
+        textView6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GameLevels.this, Level_6.class);
+                    startActivity(intent);
+                    finish();
+                } catch (Exception e) {
+                }
+            }
+        });
+        // Кнопка для перехода на 6 уровень - конец
     }
 
     // Системная кнопка "Назад" - начало

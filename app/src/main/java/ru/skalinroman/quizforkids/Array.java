@@ -208,4 +208,52 @@ public class Array {
             R.string.lvl5_text20
     };
     // Массив для 5 уровня - конец
+
+    // Массив для 5 уровня - начало
+    final int[] images6 = {
+            R.drawable.six_f_one,
+            R.drawable.six_t_one,
+            R.drawable.six_f_two,
+            R.drawable.six_t_two,
+            R.drawable.six_f_three,
+            R.drawable.six_t_three,
+            R.drawable.six_f_four,
+            R.drawable.six_t_four,
+            R.drawable.six_f_five,
+            R.drawable.six_t_five,
+            R.drawable.six_f_six,
+            R.drawable.six_t_six,
+            R.drawable.six_f_seven,
+            R.drawable.six_t_seven,
+            R.drawable.six_f_eight,
+            R.drawable.six_t_eight,
+            R.drawable.six_f_nine,
+            R.drawable.six_t_nine,
+            R.drawable.six_f_ten,
+            R.drawable.six_t_ten
+    };
+
+    final int[] texts6 = {
+            R.string.lvl6_text1,
+            R.string.lvl6_text2,
+            R.string.lvl6_text3,
+            R.string.lvl6_text4,
+            R.string.lvl6_text5,
+            R.string.lvl6_text6,
+            R.string.lvl6_text7,
+            R.string.lvl6_text8,
+            R.string.lvl6_text9,
+            R.string.lvl6_text10,
+            R.string.lvl6_text11,
+            R.string.lvl6_text12,
+            R.string.lvl6_text13,
+            R.string.lvl6_text14,
+            R.string.lvl6_text15,
+            R.string.lvl6_text16,
+            R.string.lvl6_text17,
+            R.string.lvl6_text18,
+            R.string.lvl6_text19,
+            R.string.lvl6_text20
+    };
+    // Массив для 5 уровня - конец
 }
