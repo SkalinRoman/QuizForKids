@@ -209,7 +209,7 @@ public class Array {
     };
     // Массив для 5 уровня - конец
 
-    // Массив для 5 уровня - начало
+    // Массив для 6 уровня - начало
     final int[] images6 = {
             R.drawable.six_f_one,
             R.drawable.six_t_one,
@@ -255,5 +255,37 @@ public class Array {
             R.string.lvl6_text19,
             R.string.lvl6_text20
     };
-    // Массив для 5 уровня - конец
+    // Массив для 6 уровня - конец
+
+    // Массив для 7 уровня - начало
+    final int[] images7 = {
+            R.drawable.seven_1,
+            R.drawable.seven_2,
+            R.drawable.seven_3,
+            R.drawable.seven_4,
+            R.drawable.seven_5,
+            R.drawable.seven_6,
+            R.drawable.seven_7,
+            R.drawable.seven_8,
+            R.drawable.seven_9,
+            R.drawable.seven_10,
+            R.drawable.seven_11,
+            R.drawable.seven_12,
+    };
+
+    final int[] texts7 = {
+            R.string.lvl7_text1,
+            R.string.lvl7_text2,
+            R.string.lvl7_text3,
+            R.string.lvl7_text4,
+            R.string.lvl7_text5,
+            R.string.lvl7_text6,
+            R.string.lvl7_text7,
+            R.string.lvl7_text8,
+            R.string.lvl7_text9,
+            R.string.lvl7_text10,
+            R.string.lvl7_text11,
+            R.string.lvl7_text12,
+    };
+    // Массив для 7 уровня - конец
 }
