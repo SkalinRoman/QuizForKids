@@ -52,8 +52,8 @@
     <string name="lvl2_text8">VIII</string>
     <string name="lvl2_text9">IX</string>
     <string name="lvl2_text10">X</string>
-    <string name="level_two_end">"   А знаете ли вы, что в римских цифрах отсутствует ноль?"</string>
-    <string name="level_three">Догадайся, что больше?</string>
+    <string name="level_two_end">"   Римские цифры использовались в Римской империи. Сегодня они используются для обозначения веков, месяцев, их можно увидеть на циферблатах часов.\n   А еще интересно то, что в римских цифрах отсутствует ноль."</string>
+    <string name="level_three">Догадайся, какие числа скрывают картинки и выбери большее</string>
     <string name="level3">Уровень 3</string>
     <string name="lvl3_text1">6 - 5</string>
     <string name="lvl3_text2">Пальцы</string>
@@ -66,7 +66,7 @@
     <string name="lvl3_text9">Цыплята</string>
     <string name="lvl3_text10">Следы</string>
     <string name="level_three_end">"   Число 8 считается числом совершенства, равновесия и космического порядка. Оно ассоциируется с бесконечностью, а так же является символом любви и дружбы."</string>
-    <string name="level_four">Выбери что нибудь четное</string>
+    <string name="level_four">Догадайся, какие числа скрывают картинки и выбери четное</string>
     <string name="level4">Уровень 4</string>
     <string name="lvl4_text1">Один</string>
     <string name="lvl4_text2">Два</string>
@@ -88,7 +88,7 @@
     <string name="lvl4_text18">Шестеренка</string>
     <string name="lvl4_text19">Ноты</string>
     <string name="lvl4_text20">Взрыв</string>
-    <string name="level_four_end">"   А знаете ли вы, что ноль относится к четным цифрам?"</string>
+    <string name="level_four_end">"   Любое количество, которое можно разделить на две равные части, считается четным."</string>
     <string name="level_five">Что можно съесть?</string>
     <string name="level5">Уровень 5</string>
     <string name="lvl5_text1">Сумка</string>
@@ -112,7 +112,7 @@
     <string name="lvl5_text19">Сапог</string>
     <string name="lvl5_text20">Шоколад</string>
     <string name="level_five_end">"   Известно, что многие крокодилы глотают камни. Но не потому что для них они съедобны. Камни помогают им быстрее погружаться в воду и удерживаться на дне."</string>
-    <string name="level_six">Собери все фрукты или ягоды</string>
+    <string name="level_six">Выбери то, что с кулинарной точки зрения, является фруктом или ягодой</string>
     <string name="level6">Уровень 6</string>
     <string name="lvl6_text1">Мухомор</string>
     <string name="lvl6_text2">Арбуз</string>
@@ -134,7 +134,7 @@
     <string name="lvl6_text18">Апельсин</string>
     <string name="lvl6_text19">Огурец</string>
     <string name="lvl6_text20">Клубника</string>
-    <string name="level_six_end">"   Помидор это овощ или фрукт? Европейцы называют фруктами мягкие сочные плоды. Это единственное основание, в соответствии с которым можно назвать томат фруктовым растением.\n   В нашей же стране к этому относятся скептически: мы не добавляем томаты в сладкие блюда, не поливаем их соком мороженое, не угощаем детей в качестве сладостей. Поэтому для нашей страны помидор – это исключительно овощ."</string>
+    <string name="level_six_end">"   Помидор это овощ или фрукт?\n   Европейцы называют фруктами мягкие сочные плоды. Это единственное основание, в соответствии с которым можно назвать томат фруктовым растением.\n   В России же к этому относятся скептически: мы не добавляем томаты в сладкие блюда, не поливаем их соком мороженое, не угощаем детей в качестве сладостей. Поэтому для нашей страны помидор – это исключительно овощ."</string>
     <string name="level_seven">Какой месяц в году начинается раньше?</string>
     <string name="level7">Уровень 7</string>
     <string name="lvl7_text1">Январь</string>
@@ -149,5 +149,28 @@
     <string name="lvl7_text10">Октябрь</string>
     <string name="lvl7_text11">Ноябрь</string>
     <string name="lvl7_text12">Декабрь</string>
-    <string name="level_seven_end">"   В Древнем Риме Новый год встречали в марте: именно в это время начинались полевые работы. В 46 году до н.э. римский император Юлий Цезарь перенес начало года на 1 января. Названный его именем Юлианский календарь распространился по всей Европе."</string>
+    <string name="level_seven_end">"   В Древнем Риме Новый год встречали в марте: именно в это время начинались полевые работы. В 46 году до н.э. римский император Юлий Цезарь перенес начало года на 1 января. Названный его именем Юлианский календарь распространился по всей Европе.\n   С 1700 года по указу Петра I Новый год в России стали праздновать, как и в других странах Европы."</string>
+    <string name="level_eight">Выбери живое</string>
+    <string name="level8">Уровень 8</string>
+    <string name="lvl8_text1">Шляпа</string>
+    <string name="lvl8_text2">Паук</string>
+    <string name="lvl8_text3">Паутина</string>
+    <string name="lvl8_text4">Рыбка</string>
+    <string name="lvl8_text5">Автомобиль</string>
+    <string name="lvl8_text6">Улитка</string>
+    <string name="lvl8_text7">Ракета</string>
+    <string name="lvl8_text8">Дерево</string>
+    <string name="lvl8_text9">Будильник</string>
+    <string name="lvl8_text10">Пальма</string>
+    <string name="lvl8_text11">Смерч</string>
+    <string name="lvl8_text12">Человек</string>
+    <string name="lvl8_text13">Снеговик</string>
+    <string name="lvl8_text14">Бабочка</string>
+    <string name="lvl8_text15">Комета</string>
+    <string name="lvl8_text16">Ящерица</string>
+    <string name="lvl8_text17">Телефон</string>
+    <string name="lvl8_text18">Цветок</string>
+    <string name="lvl8_text19">Барабан</string>
+    <string name="lvl8_text20">Летучая мышь</string>
+    <string name="level_eight_end">"   Природой называется все то, что нас окружает и не сделано руками человека. Природа делится на живую и неживую. К неживой природе относятся солнце, воздух, вода, горы, камни, песок, небо, звезды. К живой природе относятся растения, животные и грибы.</string>
 </resources>

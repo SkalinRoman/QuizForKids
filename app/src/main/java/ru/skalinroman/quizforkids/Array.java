@@ -259,18 +259,18 @@ public class Array {
 
     // Массив для 7 уровня - начало
     final int[] images7 = {
-            R.drawable.seven_1,
-            R.drawable.seven_2,
-            R.drawable.seven_3,
-            R.drawable.seven_4,
-            R.drawable.seven_5,
-            R.drawable.seven_6,
-            R.drawable.seven_7,
-            R.drawable.seven_8,
-            R.drawable.seven_9,
-            R.drawable.seven_10,
-            R.drawable.seven_11,
-            R.drawable.seven_12,
+            R.drawable.seven_one,
+            R.drawable.seven_two,
+            R.drawable.seven_three,
+            R.drawable.seven_four,
+            R.drawable.seven_five,
+            R.drawable.seven_six,
+            R.drawable.seven_seven,
+            R.drawable.seven_eight,
+            R.drawable.seven_nine,
+            R.drawable.seven_ten,
+            R.drawable.seven_eleven,
+            R.drawable.seven_twelve,
     };
 
     final int[] texts7 = {
@@ -288,4 +288,52 @@ public class Array {
             R.string.lvl7_text12,
     };
     // Массив для 7 уровня - конец
+
+    // Массив для 8 уровня - начало
+    final int[] images8 = {
+            R.drawable.eight_f_one,
+            R.drawable.eight_t_one,
+            R.drawable.eight_f_two,
+            R.drawable.eight_t_two,
+            R.drawable.eight_f_three,
+            R.drawable.eight_t_three,
+            R.drawable.eight_f_four,
+            R.drawable.eight_t_four,
+            R.drawable.eight_f_five,
+            R.drawable.eight_t_five,
+            R.drawable.eight_f_six,
+            R.drawable.eight_t_six,
+            R.drawable.eight_f_seven,
+            R.drawable.eight_t_seven,
+            R.drawable.eight_f_eight,
+            R.drawable.eight_t_eight,
+            R.drawable.eight_f_nine,
+            R.drawable.eight_t_nine,
+            R.drawable.eight_f_ten,
+            R.drawable.eight_t_ten
+    };
+
+    final int[] texts8 = {
+            R.string.lvl8_text1,
+            R.string.lvl8_text2,
+            R.string.lvl8_text3,
+            R.string.lvl8_text4,
+            R.string.lvl8_text5,
+            R.string.lvl8_text6,
+            R.string.lvl8_text7,
+            R.string.lvl8_text8,
+            R.string.lvl8_text9,
+            R.string.lvl8_text10,
+            R.string.lvl8_text11,
+            R.string.lvl8_text12,
+            R.string.lvl8_text13,
+            R.string.lvl8_text14,
+            R.string.lvl8_text15,
+            R.string.lvl8_text16,
+            R.string.lvl8_text17,
+            R.string.lvl8_text18,
+            R.string.lvl8_text19,
+            R.string.lvl8_text20
+    };
+    // Массив для 8 уровня - конец
 }
