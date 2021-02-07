@@ -177,4 +177,7 @@
     <string name="level9">Уровень 9</string>
     <string name="level_nine">Кто живет на ферме?</string>
     <string name="level_nine_end">"   Ученые предполагают, что коза была одним из первых, прирученных человеком животных."</string>
+    <string name="level10">Уровень 10</string>
+    <string name="level_ten">Кто тут хищник?</string>
+    <string name="level_ten_end">"   Хищники — это плотоядные млекопитающие. Множество хищников питаются не только животной, но и растительной пищей."</string>
 </resources>

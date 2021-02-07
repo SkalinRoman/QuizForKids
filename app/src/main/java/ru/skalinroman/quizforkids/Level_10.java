@@ -20,7 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
-public class Level_9 extends AppCompatActivity {
+public class Level_10 extends AppCompatActivity {
 
     public int numberLeft; // Переменная для левой картинки
     public int numberRight; // Переменная для правой картинки
@@ -36,7 +36,7 @@ public class Level_9 extends AppCompatActivity {
 
         // Создаем переменную text_levels
         TextView text_levels = findViewById(R.id.text_levels);
-        text_levels.setText(R.string.level9);  // Установили текст
+        text_levels.setText(R.string.level10);  // Установили текст
 
         final ImageView img_left = (ImageView) findViewById(R.id.amg_left);
         img_left.setClipToOutline(true);   // Код, который скругляет углы левой картинки
@@ -53,12 +53,12 @@ public class Level_9 extends AppCompatActivity {
 
         // Устанавливаем фон - начало
         ImageView background = (ImageView) findViewById(R.id.background);
-        background.setImageResource(R.drawable.background_nine);
+        background.setImageResource(R.drawable.background_ten);
         // Устанавливаем фон - конец
 
         // Устанавливае описание задания - начало
         TextView textDescription = (TextView) findViewById(R.id.exercise);
-        textDescription.setText(R.string.level_nine);
+        textDescription.setText(R.string.level_ten);
         // Устанавливае описание задания - конец
 
         // Вызов диалогового окна в конце игры
@@ -71,12 +71,12 @@ public class Level_9 extends AppCompatActivity {
 
         // Устанавливаем фон диалогового окна - начало
         LinearLayout dialogFonEnd = (LinearLayout) dialogEnd.findViewById(R.id.dialog_fon_end);
-        dialogFonEnd.setBackgroundResource(R.drawable.preview_background_nine);
+        dialogFonEnd.setBackgroundResource(R.drawable.preview_background_ten);
         // Устанавливаем фон диалогового окна - конец
 
         // Интересный факт - начало
         TextView textDescriptionEnd = (TextView) dialogEnd.findViewById(R.id.level_description_end);
-        textDescriptionEnd.setText(R.string.level_nine_end);
+        textDescriptionEnd.setText(R.string.level_ten_end);
         // Интересный факт - конец
 
         // Кнопка "Продолжить" диалоговое окно - начало
@@ -85,7 +85,7 @@ public class Level_9 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(Level_9.this, Level_10.class); // менять переход на новый уровень тут
+                    Intent intent = new Intent(Level_10.this, GameLevels.class); // менять переход на новый уровень тут
                     startActivity(intent);
                     finish();
                 } catch (Exception e) {
@@ -102,7 +102,7 @@ public class Level_9 extends AppCompatActivity {
             public void onClick(View v) {
                 // Обрабатываем нажатие кнопка "Назад" - начало
                 try {
-                    Intent intent = new Intent(Level_9.this, GameLevels.class);
+                    Intent intent = new Intent(Level_10.this, GameLevels.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception e) {
@@ -138,11 +138,11 @@ public class Level_9 extends AppCompatActivity {
         // Массив для прогресса игры - конец
 
         // Подключаем анимацию - начало
-        final Animation a = AnimationUtils.loadAnimation(Level_9.this, R.anim.alpha);
+        final Animation a = AnimationUtils.loadAnimation(Level_10.this, R.anim.alpha);
         // Подключаем анимацию - конец
 
         numberLeft = random.nextInt(20); // Генерируем случайное число
-        img_left.setImageResource(array.images9[numberLeft]); // Достаем из массива картинку
+        img_left.setImageResource(array.images10[numberLeft]); // Достаем из массива картинку
 
         numberRight = random.nextInt(20); // Генерируем случайное число
         // Цикл с предусловием, проверяющий равенство чисел - начало
@@ -151,7 +151,7 @@ public class Level_9 extends AppCompatActivity {
         }
         // Цикл с предусловием, проверяющий равенство чисел - конец
 
-        img_right.setImageResource(array.images9[numberRight]); // Достаем из массива картинку
+        img_right.setImageResource(array.images10[numberRight]); // Достаем из массива картинку
 
         // Обрабатываем нажатие левой картинки - начало
         img_left.setOnTouchListener(new View.OnTouchListener() {
@@ -222,8 +222,7 @@ public class Level_9 extends AppCompatActivity {
                         dialogEnd.show();
                     } else {
                         numberLeft = random.nextInt(20); // Генерируем случайное число
-                        img_left.setImageResource(array.images9[numberLeft]); // Достаем из массива картинку
-                        //        text_left.setText(array.texts9[numberLeft]); // Достаем из массива текст
+                        img_left.setImageResource(array.images10[numberLeft]); // Достаем из массива картинку
 
                         numberRight = random.nextInt(20); // Генерируем случайное число
                         // Цикл с предусловием, проверяющий равенство чисел - начало
@@ -232,9 +231,7 @@ public class Level_9 extends AppCompatActivity {
                         }
                         // Цикл с предусловием, проверяющий равенство чисел - конец
 
-                        img_right.setImageResource(array.images9[numberRight]); // Достаем из массива картинку
-                        //        text_right.setText(array.texts8[numberRight]); // Достаем из массива текст
-
+                        img_right.setImageResource(array.images10[numberRight]); // Достаем из массива картинку
                         img_right.setEnabled(true); // Включаем обратно правую картинку
                     }
                 }
@@ -313,8 +310,7 @@ public class Level_9 extends AppCompatActivity {
                         dialogEnd.show();
                     } else {
                         numberLeft = random.nextInt(20); // Генерируем случайное число
-                        img_left.setImageResource(array.images9[numberLeft]); // Достаем из массива картинку
-                        //        text_left.setText(array.texts8[numberLeft]); // Достаем из массива текст
+                        img_left.setImageResource(array.images10[numberLeft]); // Достаем из массива картинку
 
                         numberRight = random.nextInt(20); // Генерируем случайное число
                         // Цикл с предусловием, проверяющий равенство чисел - начало
@@ -323,8 +319,7 @@ public class Level_9 extends AppCompatActivity {
                         }
                         // Цикл с предусловием, проверяющий равенство чисел - конец
 
-                        img_right.setImageResource(array.images9[numberRight]); // Достаем из массива картинку
-                        //        text_right.setText(array.texts8[numberRight]); // Достаем из массива текст
+                        img_right.setImageResource(array.images10[numberRight]); // Достаем из массива картинку
                         img_left.setEnabled(true); // Включаем обратно левую картинку
                     }
                 }
@@ -339,7 +334,7 @@ public class Level_9 extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         try {
-            Intent intent = new Intent(Level_9.this, GameLevels.class);
+            Intent intent = new Intent(Level_10.this, GameLevels.class);
             startActivity(intent);
             finish();
         } catch (Exception e) {

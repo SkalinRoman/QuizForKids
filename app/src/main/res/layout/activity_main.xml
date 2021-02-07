@@ -36,13 +36,13 @@
             android:id="@+id/buttonStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_stroke_blue_press_blue30"
+            android:background="@drawable/button_stroke_brown_press_brown30"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:layout_marginBottom="10dp"
             android:text="@string/start"
             android:textAllCaps="false"
-            android:textColor="@color/blue"
+            android:textColor="@color/brown"
             android:textSize="24sp" />
     </LinearLayout>
 </RelativeLayout>
