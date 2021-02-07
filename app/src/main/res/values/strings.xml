@@ -25,6 +25,7 @@
     <string name="count_19">19</string>
     <string name="count_20">20</string>
     <string name="level">Уровень:</string>
+    <string name="level_p">Чтобы пройти уровень, набери 20 очков</string>
     <string name="level1">Уровень 1</string>
     <string name="lvl1_text0">Ноль</string>
     <string name="lvl1_text1">Один</string>
@@ -172,5 +173,8 @@
     <string name="lvl8_text18">Цветок</string>
     <string name="lvl8_text19">Барабан</string>
     <string name="lvl8_text20">Летучая мышь</string>
-    <string name="level_eight_end">"   Природой называется все то, что нас окружает и не сделано руками человека. Природа делится на живую и неживую. К неживой природе относятся солнце, воздух, вода, горы, камни, песок, небо, звезды. К живой природе относятся растения, животные и грибы.</string>
+    <string name="level_eight_end">"   Все живое на свете создано природой. Это растения, животные и грибы. К неживой природе относятся солнце, воздух, вода, горы, камни, песок, небо, звезды. Так же к не живому относится все, что сделано руками человека.</string>
+    <string name="level9">Уровень 9</string>
+    <string name="level_nine">Кто живет на ферме?</string>
+    <string name="level_nine_end">"   Ученые предполагают, что коза была одним из первых, прирученных человеком животных."</string>
 </resources>

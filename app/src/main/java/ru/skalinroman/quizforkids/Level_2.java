@@ -47,7 +47,7 @@ public class Level_2 extends AppCompatActivity {
         // Путь к левой TextView
         final TextView text_left = findViewById(R.id.text_left);
         // Путь к правой TextView
-        final TextView text_right = findViewById(R.id.text_right);
+        //    final TextView text_right = findViewById(R.id.text_right);
 
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -145,7 +145,7 @@ public class Level_2 extends AppCompatActivity {
 
         numberLeft = random.nextInt(10); // Генерируем случайное число от 0 до 9
         img_left.setImageResource(array.images2[numberLeft]); // Достаем из массива картинку
-        text_left.setText(array.texts2[numberLeft]); // Достаем из массива текст
+        //  text_left.setText(array.texts2[numberLeft]); // Достаем из массива текст
 
         numberRight = random.nextInt(10); // Генерируем случайное число от 0 до 9
         // Цикл с предусловием, проверяющий равенство чисел - начало
@@ -155,7 +155,7 @@ public class Level_2 extends AppCompatActivity {
         // Цикл с предусловием, проверяющий равенство чисел - конец
 
         img_right.setImageResource(array.images2[numberRight]); // Достаем из массива картинку
-        text_right.setText(array.texts2[numberRight]); // Достаем из массива текст
+        //   text_right.setText(array.texts2[numberRight]); // Достаем из массива текст
 
         // Обрабатываем нажатие левой картинки - начало
         img_left.setOnTouchListener(new View.OnTouchListener() {
@@ -228,7 +228,7 @@ public class Level_2 extends AppCompatActivity {
                         numberLeft = random.nextInt(10); // Генерируем случайное число от 0 до 9
                         img_left.setImageResource(array.images2[numberLeft]); // Достаем из массива картинку
                         img_left.startAnimation(a);
-                        text_left.setText(array.texts2[numberLeft]); // Достаем из массива текст
+                        //     text_left.setText(array.texts2[numberLeft]); // Достаем из массива текст
 
                         numberRight = random.nextInt(10); // Генерируем случайное число от 0 до 9
                         // Цикл с предусловием, проверяющий равенство чисел - начало
@@ -239,7 +239,7 @@ public class Level_2 extends AppCompatActivity {
 
                         img_right.setImageResource(array.images2[numberRight]); // Достаем из массива картинку
                         img_right.startAnimation(a);
-                        text_right.setText(array.texts2[numberRight]); // Достаем из массива текст
+                        //    text_right.setText(array.texts2[numberRight]); // Достаем из массива текст
 
                         img_right.setEnabled(true); // Включаем обратно правую картинку
                     }
@@ -321,7 +321,7 @@ public class Level_2 extends AppCompatActivity {
                         numberLeft = random.nextInt(10); // Генерируем случайное число от 0 до 9
                         img_left.setImageResource(array.images2[numberLeft]); // Достаем из массива картинку
                         img_left.startAnimation(a);
-                        text_left.setText(array.texts2[numberLeft]); // Достаем из массива текст
+                        //    text_left.setText(array.texts2[numberLeft]); // Достаем из массива текст
 
                         numberRight = random.nextInt(10); // Генерируем случайное число от 0 до 9
                         // Цикл с предусловием, проверяющий равенство чисел - начало
@@ -332,7 +332,7 @@ public class Level_2 extends AppCompatActivity {
 
                         img_right.setImageResource(array.images2[numberRight]); // Достаем из массива картинку
                         img_right.startAnimation(a);
-                        text_right.setText(array.texts2[numberRight]); // Достаем из массива текст
+                        //    text_right.setText(array.texts2[numberRight]); // Достаем из массива текст
 
                         img_left.setEnabled(true); // Включаем обратно левую картинку
                     }

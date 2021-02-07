@@ -336,4 +336,29 @@ public class Array {
             R.string.lvl8_text20
     };
     // Массив для 8 уровня - конец
+
+    // Массив для 9 уровня - начало
+    final int[] images9 = {
+            R.drawable.nine_f_one,
+            R.drawable.nine_t_one,
+            R.drawable.nine_f_two,
+            R.drawable.nine_t_two,
+            R.drawable.nine_f_three,
+            R.drawable.nine_t_three,
+            R.drawable.nine_f_four,
+            R.drawable.nine_t_four,
+            R.drawable.nine_f_five,
+            R.drawable.nine_t_five,
+            R.drawable.nine_f_six,
+            R.drawable.nine_t_six,
+            R.drawable.nine_f_seven,
+            R.drawable.nine_t_seven,
+            R.drawable.nine_f_eight,
+            R.drawable.nine_t_eight,
+            R.drawable.nine_f_nine,
+            R.drawable.nine_t_nine,
+            R.drawable.nine_f_ten,
+            R.drawable.nine_t_ten
+    };
+    // Массив для 9 уровня - конец
 }

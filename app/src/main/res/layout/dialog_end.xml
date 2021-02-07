@@ -48,7 +48,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/button_stroke_brown_press_brown30_end_dialog"
+                android:background="@drawable/button_stroke_brown_press_brown30"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:text="@string/text_continue"
