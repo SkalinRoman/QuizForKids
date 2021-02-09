@@ -10,82 +10,38 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
     private long backPressedTime;
     private Toast backToast;
 
-    private ImageView image_1;
-    Animation.AnimationListener animationFadeInListener = new Animation.AnimationListener() {
-        @Override
-        public void onAnimationEnd(Animation animation) {
-            image_1.startAnimation(a_2);
-        }
-
-        @Override
-        public void onAnimationRepeat(Animation animation) {
-            // TODO Auto-generated method stub
-        }
-
-        @Override
-        public void onAnimationStart(Animation animation) {
-            // TODO Auto-generated method stub
-        }
-    };
-    private Animation a_1, a_2;
-    // Системная кнопка "Назад" - начало
-
-    @Override
-    public void onBackPressed() {
-
-        if (backPressedTime + 2000 > System.currentTimeMillis()) {
-            backToast.cancel();
-            super.onBackPressed();
-            return;
-        } else {
-            backToast = Toast.makeText(getBaseContext(), "Нажмите еще раз, чтобы выйти", Toast.LENGTH_SHORT);
-            backToast.show();
-        }
-
-        backPressedTime = System.currentTimeMillis();
-    }
-
-    Animation.AnimationListener animationFadeOutListener = new Animation.AnimationListener() {
-
-        @Override
-        public void onAnimationEnd(Animation animation) {
-            image_1.startAnimation(a_1);
-        }
-
-        @Override
-        public void onAnimationRepeat(Animation animation) {
-            // TODO Auto-generated method stub
-        }
-
-        @Override
-        public void onAnimationStart(Animation animation) {
-            // TODO Auto-generated method stub
-        }
-    };
+    public int main_name; // Переменная для заставки
+    Array array = new Array(); // Создали новый объект класса Array
+    Random random = new Random(); // Для генерации случайных чисел
+    private ImageView image;
+    private Animation a;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        image_1 = (ImageView) findViewById(R.id.main_name_game);
+        image = (ImageView) findViewById(R.id.main_name_game);
 
         // Подключаем анимацию - начало
-        a_1 = AnimationUtils.loadAnimation(this, R.anim.myalpha_1);
-        a_2 = AnimationUtils.loadAnimation(this, R.anim.myalpha_2);
-        a_1.setAnimationListener(animationFadeInListener);
-        a_2.setAnimationListener(animationFadeOutListener);
+        a = AnimationUtils.loadAnimation(this, R.anim.myalpha_1);
         // Подключаем анимацию - конец
 
-        image_1.startAnimation(a_1);
+        main_name = random.nextInt(3); // Генерируем случайное число
+        image.setImageResource(array.main_name_view[main_name]); // Достаем из массива картинку
+
+        image.startAnimation(a);
 
         Button buttonStart = (Button) findViewById(R.id.buttonStart);
 
@@ -105,10 +61,20 @@ public class MainActivity extends AppCompatActivity {
         w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
 
+    // Системная кнопка "Назад" - начало
     @Override
-    protected void onPause() {
-        super.onPause();
-        image_1.clearAnimation();
+    public void onBackPressed() {
+
+        if (backPressedTime + 2000 > System.currentTimeMillis()) {
+            backToast.cancel();
+            super.onBackPressed();
+            return;
+        } else {
+            backToast = Toast.makeText(getBaseContext(), "Нажмите еще раз, чтобы выйти", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+
+        backPressedTime = System.currentTimeMillis();
     }
     // Системначя кнопка "Назад" - конец
 }

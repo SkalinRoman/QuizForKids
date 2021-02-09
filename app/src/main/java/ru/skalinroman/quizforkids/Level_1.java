@@ -24,8 +24,8 @@ public class Level_1 extends AppCompatActivity {
 
     Dialog dialogEnd;
 
-    public int numberLeft; // Переменная для левой картинки + текст
-    public int numberRight; // Переменная для правой картинки + текст
+    public int numberLeft; // Переменная для левой картинки
+    public int numberRight; // Переменная для правой картинки
     public int count = 0; // Счетчик правильных ответов
     Array array = new Array(); // Создали новый объект класса Array
     Random random = new Random(); // Для генерации случайных чисел
