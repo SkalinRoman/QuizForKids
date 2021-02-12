@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:layout_margin="10dp"
-    android:background="@drawable/preview_background_one"
+    android:background="@drawable/preview_background"
     android:orientation="vertical"
     android:scaleType="centerCrop">
 

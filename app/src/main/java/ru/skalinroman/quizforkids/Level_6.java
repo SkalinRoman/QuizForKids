@@ -55,7 +55,7 @@ public class Level_6 extends AppCompatActivity {
 
         // Устанавливаем фон - начало
         ImageView background = (ImageView) findViewById(R.id.background);
-        background.setImageResource(R.drawable.background_six);
+        background.setImageResource(R.drawable.background_level_six);
         // Устанавливаем фон - конец
 
         // Устанавливае описание задания - начало
@@ -72,8 +72,8 @@ public class Level_6 extends AppCompatActivity {
         dialogEnd.setCancelable(false); // Окно нельзя закрыть системной кнопкой назад
 
         // Устанавливаем фон диалогового окна - начало
-        LinearLayout dialogFonEnd = (LinearLayout) dialogEnd.findViewById(R.id.dialog_fon_end);
-        dialogFonEnd.setBackgroundResource(R.drawable.preview_background_six);
+        //   LinearLayout dialogFonEnd = (LinearLayout) dialogEnd.findViewById(R.id.dialog_fon_end);
+        //   dialogFonEnd.setBackgroundResource(R.drawable.preview_background_six);
         // Устанавливаем фон диалогового окна - конец
 
         // Интересный факт - начало
