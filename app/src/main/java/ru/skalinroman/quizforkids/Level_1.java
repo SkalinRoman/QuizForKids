@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
@@ -45,7 +46,7 @@ public class Level_1 extends AppCompatActivity {
         final ImageView img_right = (ImageView) findViewById(R.id.amg_right);
         img_right.setClipToOutline(true);   // Код, который скругляет углы правой картинки
 
-        // Путь к левой TextView
+        // Путь к TextView
         final TextView text_left = findViewById(R.id.text_left);
 
         Window w = getWindow();
@@ -66,7 +67,7 @@ public class Level_1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(Level_1.this, Level_2.class);
+                    Intent intent = new Intent(Level_1.this, Level_2.class); // менять переход на новый уровень тут
                     startActivity(intent);
                     finish();
                 } catch (Exception e) {
@@ -200,6 +201,15 @@ public class Level_1 extends AppCompatActivity {
                     // Если отпустил палец - конец
                     if (count == 20) {
                         // ВЫХОД ИЗ УРОВНЯ
+                        SharedPreferences save = getSharedPreferences("Save", MODE_PRIVATE);
+                        final int level = save.getInt("Level", 1);
+                        if (level > 1) {
+                            // пусто
+                        } else {
+                            SharedPreferences.Editor editor = save.edit();
+                            editor.putInt("Level", 2);
+                            editor.commit();
+                        }
                         dialogEnd.show(); // Показать диалоговое окно
                     } else {
                         numberLeft = random.nextInt(10); // Генерируем случайное число от 0 до 9
@@ -290,7 +300,16 @@ public class Level_1 extends AppCompatActivity {
                     }
                     // Если отпустил палец - конец
                     if (count == 20) {
-                        // Выход из уровня
+                        // ВЫХОД ИЗ УРОВНЯ
+                        SharedPreferences save = getSharedPreferences("Save", MODE_PRIVATE);
+                        final int level = save.getInt("Level", 1);
+                        if (level > 1) {
+                            // пусто
+                        } else {
+                            SharedPreferences.Editor editor = save.edit();
+                            editor.putInt("Level", 2);
+                            editor.commit();
+                        }
                         dialogEnd.show(); // Показать диалоговое окно
                     } else {
                         numberLeft = random.nextInt(10); // Генерируем случайное число от 0 до 9

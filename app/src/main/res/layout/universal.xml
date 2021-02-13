@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/background_one" />
+        android:src="@drawable/background_level_one" />
 
     <LinearLayout
         android:id="@+id/container1"
@@ -286,14 +286,13 @@
                 android:id="@+id/line_four"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/text_left"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="@string/level_p"
                     android:textColor="@color/brown"

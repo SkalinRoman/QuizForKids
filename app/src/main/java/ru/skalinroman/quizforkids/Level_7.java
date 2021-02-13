@@ -2,6 +2,7 @@ package ru.skalinroman.quizforkids;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -44,10 +45,9 @@ public class Level_7 extends AppCompatActivity {
         final ImageView img_right = (ImageView) findViewById(R.id.amg_right);
         img_right.setClipToOutline(true);   // Код, который скругляет углы правой картинки
 
-        // Путь к левой TextView
+        // Путь к TextView
         final TextView text_left = findViewById(R.id.text_left);
         // Путь к правой TextView
-        //    final TextView text_right = findViewById(R.id.text_right);
 
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -71,11 +71,6 @@ public class Level_7 extends AppCompatActivity {
         dialogEnd.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
         dialogEnd.setCancelable(false); // Окно нельзя закрыть системной кнопкой назад
 
-        // Устанавливаем фон диалогового окна - начало
-        //   LinearLayout dialogFonEnd = (LinearLayout) dialogEnd.findViewById(R.id.dialog_fon_end);
-        //   dialogFonEnd.setBackgroundResource(R.drawable.preview_background_seven);
-        // Устанавливаем фон диалогового окна - конец
-
         // Интересный факт - начало
         TextView textDescriptionEnd = (TextView) dialogEnd.findViewById(R.id.level_description_end);
         textDescriptionEnd.setText(R.string.level_seven_end);
@@ -87,7 +82,7 @@ public class Level_7 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(Level_7.this, Level_8.class);
+                    Intent intent = new Intent(Level_7.this, Level_8.class); // менять переход на новый уровень тут
                     startActivity(intent);
                     finish();
                 } catch (Exception e) {
@@ -145,7 +140,6 @@ public class Level_7 extends AppCompatActivity {
 
         numberLeft = random.nextInt(12); // Генерируем случайное число
         img_left.setImageResource(array.images7[numberLeft]); // Достаем из массива картинку
-        //    text_left.setText(array.texts7[numberLeft]); // Достаем из массива текст
 
         numberRight = random.nextInt(12); // Генерируем случайное число
         // Цикл с предусловием, проверяющий равенство чисел - начало
@@ -155,7 +149,6 @@ public class Level_7 extends AppCompatActivity {
         // Цикл с предусловием, проверяющий равенство чисел - конец
 
         img_right.setImageResource(array.images7[numberRight]); // Достаем из массива картинку
-        //    text_right.setText(array.texts7[numberRight]); // Достаем из массива текст
 
         // Обрабатываем нажатие левой картинки - начало
         img_left.setOnTouchListener(new View.OnTouchListener() {
@@ -223,12 +216,20 @@ public class Level_7 extends AppCompatActivity {
                     // Если отпустил палец - конец
                     if (count == 20) {
                         // ВЫХОД ИЗ УРОВНЯ
+                        SharedPreferences save = getSharedPreferences("Save", MODE_PRIVATE);
+                        final int level = save.getInt("Level", 1);
+                        if (level > 7) {
+                            // пусто
+                        } else {
+                            SharedPreferences.Editor editor = save.edit();
+                            editor.putInt("Level", 8);
+                            editor.commit();
+                        }
                         dialogEnd.show(); // Показать диалоговое окно
                     } else {
                         numberLeft = random.nextInt(12); // Генерируем случайное число
                         img_left.setImageResource(array.images7[numberLeft]); // Достаем из массива картинку
                         img_left.startAnimation(a);
-                        //        text_left.setText(array.texts7[numberLeft]); // Достаем из массива текст
 
                         numberRight = random.nextInt(12); // Генерируем случайное число
                         // Цикл с предусловием, проверяющий равенство чисел - начало
@@ -239,7 +240,6 @@ public class Level_7 extends AppCompatActivity {
 
                         img_right.setImageResource(array.images7[numberRight]); // Достаем из массива картинку
                         img_right.startAnimation(a);
-                        //        text_right.setText(array.texts7[numberRight]); // Достаем из массива текст
 
                         img_right.setEnabled(true); // Включаем обратно правую картинку
                     }
@@ -315,13 +315,21 @@ public class Level_7 extends AppCompatActivity {
                     }
                     // Если отпустил палец - конец
                     if (count == 20) {
-                        // Выход из уровня
+                        // ВЫХОД ИЗ УРОВНЯ
+                        SharedPreferences save = getSharedPreferences("Save", MODE_PRIVATE);
+                        final int level = save.getInt("Level", 1);
+                        if (level > 7) {
+                            // пусто
+                        } else {
+                            SharedPreferences.Editor editor = save.edit();
+                            editor.putInt("Level", 8);
+                            editor.commit();
+                        }
                         dialogEnd.show(); // Показать диалоговое окно
                     } else {
                         numberLeft = random.nextInt(12); // Генерируем случайное число
                         img_left.setImageResource(array.images7[numberLeft]); // Достаем из массива картинку
                         img_left.startAnimation(a);
-                        //        text_left.setText(array.texts7[numberLeft]); // Достаем из массива текст
 
                         numberRight = random.nextInt(12); // Генерируем случайное число
                         // Цикл с предусловием, проверяющий равенство чисел - начало
@@ -332,7 +340,6 @@ public class Level_7 extends AppCompatActivity {
 
                         img_right.setImageResource(array.images7[numberRight]); // Достаем из массива картинку
                         img_right.startAnimation(a);
-                        //        text_right.setText(array.texts7[numberRight]); // Достаем из массива текст
 
                         img_left.setEnabled(true); // Включаем обратно левую картинку
                     }
