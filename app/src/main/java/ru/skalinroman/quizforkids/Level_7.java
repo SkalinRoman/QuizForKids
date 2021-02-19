@@ -49,10 +49,6 @@ public class Level_7 extends AppCompatActivity {
         final TextView text_left = findViewById(R.id.text_left);
         // Путь к правой TextView
 
-        Window w = getWindow();
-        w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-
         // Устанавливаем фон - начало
         ImageView background = (ImageView) findViewById(R.id.background);
         background.setImageResource(R.drawable.background_level_seven);

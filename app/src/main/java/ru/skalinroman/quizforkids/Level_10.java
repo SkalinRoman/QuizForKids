@@ -19,6 +19,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
+
 import java.util.Random;
 
 public class Level_10 extends AppCompatActivity {
@@ -29,11 +34,41 @@ public class Level_10 extends AppCompatActivity {
     Dialog dialogEnd;
     Array array = new Array(); // Создали новый объект класса Array
     Random random = new Random(); // Для генерации случайных чисел
+    public InterstitialAd interstitialAd; // реклама
+    public int transition = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.universal);
+
+        // реклама - начало
+        //    MobileAds.initialize(this, "ca-app-pub-4594297867448154~6383231281");
+        //    interstitialAd = new InterstitialAd(this);
+        //    interstitialAd.setAdUnitId("ca-app-pub-4594297867448154/3892799316"); // рекламный блок
+        //    AdRequest adRequest = new AdRequest.Builder().build();
+        //    interstitialAd.loadAd(adRequest);
+        // реклама - конец
+
+        // Закрытие рекламы на крестик - начало
+        //    interstitialAd.setAdListener(new AdListener() {
+        //        @Override
+        //        public void onAdClosed() {
+        //            try {
+        //                switch (transition) {
+        //                    case 0: break;
+        //                    case 1: Intent intent = new Intent(Level_10.this, GameLevels.class);
+        //                        startActivity(intent);finish();break;
+        //                    case 2: Intent intent1 = new Intent(Level_10.this, GameLevels.class);
+        //                        startActivity(intent1);finish();break;
+        //                    default:break;
+        //                }
+        //            } catch (Exception e) {
+        // пусто
+        //            }
+        //        }
+        //    });
+        // Закрытие рекламы на крестик - конец
 
         // Создаем переменную text_levels
         TextView text_levels = findViewById(R.id.text_levels);
@@ -47,10 +82,6 @@ public class Level_10 extends AppCompatActivity {
 
         // Путь к TextView
         final TextView text_left = findViewById(R.id.text_left);
-
-        Window w = getWindow();
-        w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
         // Устанавливаем фон - начало
         ImageView background = (ImageView) findViewById(R.id.background);
@@ -80,6 +111,10 @@ public class Level_10 extends AppCompatActivity {
         button_continue_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //          if (interstitialAd.isLoaded()) {
+                //              transition = 1;
+                //              interstitialAd.show(); // Показать рекламу
+                //          } else {
                 try {
                     Intent intent = new Intent(Level_10.this, GameLevels.class); // менять переход на новый уровень тут
                     startActivity(intent);
@@ -88,6 +123,7 @@ public class Level_10 extends AppCompatActivity {
                 }
                 dialogEnd.dismiss(); // Закрываем диалоговое окно
             }
+            //      }
         });
         // Кнопка "Продолжить" диалоговое окно - конец
 
@@ -97,6 +133,10 @@ public class Level_10 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Обрабатываем нажатие кнопка "Назад" - начало
+                //          if (interstitialAd.isLoaded()) {
+                //              transition = 2;
+                //              interstitialAd.show(); // Показать рекламу
+                //          } else {
                 try {
                     Intent intent = new Intent(Level_10.this, GameLevels.class);
                     startActivity(intent);
@@ -105,6 +145,7 @@ public class Level_10 extends AppCompatActivity {
                 }
                 // Обрабатываем нажатие кнопка "Назад" - конец
             }
+            //      }
         });
         // Кнопка "Назад" - конец
 
@@ -335,11 +376,16 @@ public class Level_10 extends AppCompatActivity {
     // Системная кнопка "Назад" - начало
     @Override
     public void onBackPressed() {
+        //       if (interstitialAd.isLoaded()) {
+        //           transition = 2;
+        //           interstitialAd.show(); // Показать рекламу
+        //       } else {
         try {
             Intent intent = new Intent(Level_10.this, GameLevels.class);
             startActivity(intent);
             finish();
         } catch (Exception e) {
+            //           }
         }
     }
     // Системная кнопка "Назад" - конец

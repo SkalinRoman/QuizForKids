@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
     public int main_name; // Переменная для заставки
     Array array = new Array(); // Создали новый объект класса Array
     Random random = new Random(); // Для генерации случайных чисел
-    private ImageView image;
-    private Animation a;
+    private ImageView image; // Для заставки
+    private Animation a; // Анимация
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,9 +56,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-        Window w = getWindow();
-        w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
 
     // Системная кнопка "Назад" - начало
@@ -73,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
             backToast = Toast.makeText(getBaseContext(), "Нажмите еще раз, чтобы выйти", Toast.LENGTH_SHORT);
             backToast.show();
         }
-
         backPressedTime = System.currentTimeMillis();
     }
     // Системначя кнопка "Назад" - конец

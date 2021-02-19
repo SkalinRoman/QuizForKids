@@ -8,10 +8,13 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class GameLevels extends AppCompatActivity {
+
+    private Toast backToast; // временно
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +23,6 @@ public class GameLevels extends AppCompatActivity {
 
         SharedPreferences save = getSharedPreferences("Save", MODE_PRIVATE);
         final int level = save.getInt("Level", 1);
-
-        Window w = getWindow();
-        w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         Button button_back = (Button) findViewById(R.id.button_back);
         button_back.setOnClickListener(new View.OnClickListener() {
@@ -227,6 +227,20 @@ public class GameLevels extends AppCompatActivity {
         });
         // Кнопка для перехода на 10 уровень - конец
 
+        // Кнопка уровеня "уже скоро..." - начало
+        TextView textView11 = (TextView) findViewById(R.id.textView_11);
+        textView11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    backToast = Toast.makeText(getBaseContext(), "Уже скоро...", Toast.LENGTH_SHORT);
+                    backToast.show();
+                } catch (Exception e) {
+                }
+            }
+        });
+        // Кнопка уровеня "уже скоро..." - конец
+
         final int[] x = {
                 R.id.textView_1,
                 R.id.textView_2,
@@ -237,7 +251,8 @@ public class GameLevels extends AppCompatActivity {
                 R.id.textView_7,
                 R.id.textView_8,
                 R.id.textView_9,
-                R.id.textView_10
+                R.id.textView_10,
+                R.id.textView_11
         };
 
         for (int i = 1; i < level; i++) {
