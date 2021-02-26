@@ -227,9 +227,47 @@ public class GameLevels extends AppCompatActivity {
         });
         // Кнопка для перехода на 10 уровень - конец
 
-        // Кнопка уровеня "уже скоро..." - начало
+        // Кнопка для перехода на 11 уровень - начало
         TextView textView11 = (TextView) findViewById(R.id.textView_11);
         textView11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    if (level >= 11) {
+                        Intent intent = new Intent(GameLevels.this, Level_11.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        // пусто
+                    }
+                } catch (Exception e) {
+                }
+            }
+        });
+        // Кнопка для перехода на 11 уровень - конец
+
+        // Кнопка для перехода на 12 уровень - начало
+        TextView textView12 = (TextView) findViewById(R.id.textView_12);
+        textView12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    if (level >= 12) {
+                        Intent intent = new Intent(GameLevels.this, Level_12.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        // пусто
+                    }
+                } catch (Exception e) {
+                }
+            }
+        });
+        // Кнопка для перехода на 12 уровень - конец
+
+        // Кнопка уровеня "уже скоро..." - начало
+        TextView textView13 = (TextView) findViewById(R.id.textView_13);
+        textView13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
@@ -252,7 +290,9 @@ public class GameLevels extends AppCompatActivity {
                 R.id.textView_8,
                 R.id.textView_9,
                 R.id.textView_10,
-                R.id.textView_11
+                R.id.textView_11,
+                R.id.textView_12,
+                R.id.textView_13
         };
 
         for (int i = 1; i < level; i++) {

@@ -3,6 +3,8 @@
     <string name="start">Начать</string>
     <string name="back">Назад</string>
     <string name="close">Закрыть</string>
+    <string name="finish">Поздравляем, игра пройдена!</string>
+    <string name="back_game_levels">Вернуться в меню</string>
     <string name="count_0">0</string>
     <string name="count_1">1</string>
     <string name="count_2">2</string>
@@ -58,4 +60,10 @@
     <string name="level10">Уровень 10</string>
     <string name="level_ten">Кто тут хищник?</string>
     <string name="level_ten_end">"   Одними из самых опасных хищников на планете считаются медведи. Они обитают практически во всех уголках земного шара, включая Северный полюс."</string>
+    <string name="level11">Уровень 11</string>
+    <string name="level_11">Кто умеет летать?</string>
+    <string name="level_11_end">"   С тех пор как петухи и курицы стали жить рядом с человеком, образ их жизни кардинально изменился. Больше не надо было спасаться от хищников. Отпала необходимость перемещаться с места на место в поисках тепла и пищи. Люди поселили их в крытых домиках и давали много еды. Так эти птицы стали полностью домашними и утратили способность к полноценным полетам."</string>
+    <string name="level12">Уровень 12</string>
+    <string name="level_12">Кто живет в воде?</string>
+    <string name="level_12_end">"   Синий кит является не только самым большим обитателем океана, но и всей планеты."</string>
 </resources>

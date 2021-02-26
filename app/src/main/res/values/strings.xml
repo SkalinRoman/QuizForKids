@@ -3,6 +3,8 @@
     <string name="start">Start</string>
     <string name="back">Back</string>
     <string name="close">Close</string>
+    <string name="finish">Victory, game passed!</string>
+    <string name="back_game_levels">Back to menu</string>
     <string name="count_0">0</string>
     <string name="count_1">1</string>
     <string name="count_2">2</string>
@@ -58,4 +60,10 @@
     <string name="level10">Level 10</string>
     <string name="level_ten">Who is a predator here?</string>
     <string name="level_ten_end">"   Bears are considered to be one of the most dangerous predators on Earth. They live in almost every corner of the globe, including the North Pole."</string>
+    <string name="level11">Level 11</string>
+    <string name="level_11">Who can fly?</string>
+    <string name="level_11_end">"   Since the roosters and hens began to live next to a person, their way of life has changed dramatically. There was no longer any need to escape from predators. There was no need to move from place to place in search of warmth and food. People put them in covered houses and gave them a lot of food. So these birds became completely domestic and lost the ability to fully fly."</string>
+    <string name="level12">Level 12</string>
+    <string name="level_12">Who lives in the water?</string>
+    <string name="level_12_end">"   The blue whale is not only the largest inhabitant of the ocean, but also of the entire planet."</string>
 </resources>

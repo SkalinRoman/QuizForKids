@@ -248,4 +248,54 @@ public class Array {
             R.drawable.ten_t_ten
     };
     // Массив для 10 уровня - конец
+
+    // Массив для 11 уровня - начало
+    final int[] images11 = {
+            R.drawable.img11_f_one,
+            R.drawable.img11_t_one,
+            R.drawable.img11_f_two,
+            R.drawable.img11_t_two,
+            R.drawable.img11_f_three,
+            R.drawable.img11_t_three,
+            R.drawable.img11_f_four,
+            R.drawable.img11_t_four,
+            R.drawable.img11_f_five,
+            R.drawable.img11_t_five,
+            R.drawable.img11_f_six,
+            R.drawable.img11_t_six,
+            R.drawable.img11_f_seven,
+            R.drawable.img11_t_seven,
+            R.drawable.img11_f_eight,
+            R.drawable.img11_t_eight,
+            R.drawable.img11_f_nine,
+            R.drawable.img11_t_nine,
+            R.drawable.img11_f_ten,
+            R.drawable.img11_t_ten
+    };
+    // Массив для 11 уровня - конец
+
+    // Массив для 12 уровня - начало
+    final int[] images12 = {
+            R.drawable.img12_f_one,
+            R.drawable.img12_t_one,
+            R.drawable.img12_f_two,
+            R.drawable.img12_t_two,
+            R.drawable.img12_f_three,
+            R.drawable.img12_t_three,
+            R.drawable.img12_f_four,
+            R.drawable.img12_t_four,
+            R.drawable.img12_f_five,
+            R.drawable.img12_t_five,
+            R.drawable.img12_f_six,
+            R.drawable.img12_t_six,
+            R.drawable.img12_f_seven,
+            R.drawable.img12_t_seven,
+            R.drawable.img12_f_eight,
+            R.drawable.img12_t_eight,
+            R.drawable.img12_f_nine,
+            R.drawable.img12_t_nine,
+            R.drawable.img12_f_ten,
+            R.drawable.img12_t_ten
+    };
+    // Массив для 11 уровня - конец
 }
