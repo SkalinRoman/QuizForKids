@@ -3,7 +3,8 @@
     <string name="start">Начать</string>
     <string name="back">Назад</string>
     <string name="close">Закрыть</string>
-    <string name="finish">Поздравляем, игра пройдена!</string>
+    <string name="finish_one">"Поздравляем,</string>
+    <string name="finish_two">"игра пройдена!</string>
     <string name="back_game_levels">Вернуться в меню</string>
     <string name="count_0">0</string>
     <string name="count_1">1</string>
@@ -66,4 +67,13 @@
     <string name="level12">Уровень 12</string>
     <string name="level_12">Кто живет в воде?</string>
     <string name="level_12_end">"   Синий кит является не только самым большим обитателем океана, но и всей планеты."</string>
+    <string name="level13">Уровень 13</string>
+    <string name="level_13">Выбери предмет, который производит звуки.</string>
+    <string name="level_13_end">"   Для передачи звука нужен воздух, жидкость или твердое вещество. В вакууме звук не распространяется."</string>
+    <string name="level14">Уровень 14</string>
+    <string name="level_14">Что сделано из металла?</string>
+    <string name="level_14_end">"   Мир человека во многом приобрел свой привычный современный облик благодаря огромному разнообразию металлов, находящихся в земной коре. Они обеспечивают возможность работы промышленных предприятий, сельского хозяйства."</string>
+    <string name="level15">Уровень 15</string>
+    <string name="level_15">Выбери то, что имеет отношение к спорту.</string>
+    <string name="level_15_end">"   Важными составляющими здорового образа жизни являются: правильное питание, соблюдение режима дня и, конечно, занятия спортом.</string>
 </resources>

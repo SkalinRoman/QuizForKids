@@ -244,10 +244,10 @@
 
                 <TextView
                     android:id="@+id/count"
-                    android:layout_width="80dp"
-                    android:layout_height="60dp"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/style_button_strocke_orange95"
+                    android:background="@drawable/style_button_stroke_orange"
                     android:gravity="center"
                     android:text="0"
                     android:textColor="@color/orange"

@@ -297,5 +297,80 @@ public class Array {
             R.drawable.img12_f_ten,
             R.drawable.img12_t_ten
     };
-    // Массив для 11 уровня - конец
+    // Массив для 12 уровня - конец
+
+    // Массив для 13 уровня - начало
+    final int[] images13 = {
+            R.drawable.img_13_f_one,
+            R.drawable.img_13_t_one,
+            R.drawable.img_13_f_two,
+            R.drawable.img_13_t_two,
+            R.drawable.img_13_f_three,
+            R.drawable.img_13_t_three,
+            R.drawable.img_13_f_four,
+            R.drawable.img_13_t_four,
+            R.drawable.img_13_f_five,
+            R.drawable.img_13_t_five,
+            R.drawable.img_13_f_six,
+            R.drawable.img_13_t_six,
+            R.drawable.img_13_f_seven,
+            R.drawable.img_13_t_seven,
+            R.drawable.img_13_f_eight,
+            R.drawable.img_13_t_eight,
+            R.drawable.img_13_f_nine,
+            R.drawable.img_13_t_nine,
+            R.drawable.img_13_f_ten,
+            R.drawable.img_13_t_ten
+    };
+    // Массив для 13 уровня - конец
+
+    // Массив для 14 уровня - начало
+    final int[] images14 = {
+            R.drawable.img_14_f_one,
+            R.drawable.img_14_t_one,
+            R.drawable.img_14_f_two,
+            R.drawable.img_14_t_two,
+            R.drawable.img_14_f_three,
+            R.drawable.img_14_t_three,
+            R.drawable.img_14_f_four,
+            R.drawable.img_14_t_four,
+            R.drawable.img_14_f_five,
+            R.drawable.img_14_t_five,
+            R.drawable.img_14_f_six,
+            R.drawable.img_14_t_six,
+            R.drawable.img_14_f_seven,
+            R.drawable.img_14_t_seven,
+            R.drawable.img_14_f_eight,
+            R.drawable.img_14_t_eight,
+            R.drawable.img_14_f_nine,
+            R.drawable.img_14_t_nine,
+            R.drawable.img_14_f_ten,
+            R.drawable.img_14_t_ten
+    };
+    // Массив для 14 уровня - конец
+
+    // Массив для 15 уровня - начало
+    final int[] images15 = {
+            R.drawable.img_15_f_one,
+            R.drawable.img_15_t_one,
+            R.drawable.img_15_f_two,
+            R.drawable.img_15_t_two,
+            R.drawable.img_15_f_three,
+            R.drawable.img_15_t_three,
+            R.drawable.img_15_f_four,
+            R.drawable.img_15_t_four,
+            R.drawable.img_15_f_five,
+            R.drawable.img_15_t_five,
+            R.drawable.img_15_f_six,
+            R.drawable.img_15_t_six,
+            R.drawable.img_15_f_seven,
+            R.drawable.img_15_t_seven,
+            R.drawable.img_15_f_eight,
+            R.drawable.img_15_t_eight,
+            R.drawable.img_15_f_nine,
+            R.drawable.img_15_t_nine,
+            R.drawable.img_15_f_ten,
+            R.drawable.img_15_t_ten
+    };
+    // Массив для 15 уровня - конец
 }

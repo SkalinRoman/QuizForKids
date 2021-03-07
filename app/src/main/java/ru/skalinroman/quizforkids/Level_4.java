@@ -14,7 +14,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -56,10 +55,8 @@ public class Level_4 extends AppCompatActivity {
             public void onAdClosed() {
                 try {
                     switch (transition) {
-                        case 0:
-                            break;
                         case 1:
-                            Intent intent = new Intent(Level_4.this, Level_5.class);
+                            Intent intent = new Intent(Level_4.this, Level_5.class); // Менять переход на новый уровень тут
                             startActivity(intent);
                             finish();
                             break;
@@ -88,9 +85,6 @@ public class Level_4 extends AppCompatActivity {
         final ImageView img_right = (ImageView) findViewById(R.id.amg_right);
         img_right.setClipToOutline(true);   // Код, который скругляет углы правой картинки
 
-        // Путь к TextView
-        final TextView text_left = findViewById(R.id.text_left);
-
         // Устанавливаем фон - начало
         ImageView background = (ImageView) findViewById(R.id.background);
         background.setImageResource(R.drawable.background_level_four);
@@ -102,11 +96,11 @@ public class Level_4 extends AppCompatActivity {
         // Устанавливае описание задания - конец
 
         // Вызов диалогового окна в конце игры
-        dialogEnd = new Dialog(this);  // Создаем новое диалоговое окно
+        dialogEnd = new Dialog(this); // Создаем новое диалоговое окно
         dialogEnd.requestWindowFeature(Window.FEATURE_NO_TITLE); // Скрываем заголовок
         dialogEnd.setContentView(R.layout.dialog_end); // Путь к макету диалогового окна
         dialogEnd.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT)); // Прозрачный фон диалогового окна
-        dialogEnd.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
+        dialogEnd.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT); // Растягиваем на весь экран
         dialogEnd.setCancelable(false); // Окно нельзя закрыть системной кнопкой назад
 
         // Интересный факт - начало
@@ -124,7 +118,7 @@ public class Level_4 extends AppCompatActivity {
                     interstitialAd.show(); // Показать рекламу
                 } else {
                     try {
-                        Intent intent = new Intent(Level_4.this, Level_5.class); // менять переход на новый уровень тут
+                        Intent intent = new Intent(Level_4.this, Level_5.class); // Менять переход на новый уровень тут
                         startActivity(intent);
                         finish();
                     } catch (Exception e) {
@@ -231,7 +225,7 @@ public class Level_4 extends AppCompatActivity {
                         // Определяем правильные ответы и закрашиваем прогресс цветом лайм - начало
                         for (int i = 0; i < count; i++) {
                             TextView tv = findViewById(progress[i]);
-                            tv.setBackgroundResource(R.drawable.style_points_lime);
+                            tv.setBackgroundResource(R.drawable.style_points_orange);
                         }
                         // Определяем правильные ответы и закрашиваем прогресс цветом лайм - конец
                     } else {
@@ -257,7 +251,7 @@ public class Level_4 extends AppCompatActivity {
                         // Определяем правильные ответы и закрашиваем прогресс цветом лайм - начало
                         for (int i = 0; i < count; i++) {
                             TextView tv = findViewById(progress[i]);
-                            tv.setBackgroundResource(R.drawable.style_points_lime);
+                            tv.setBackgroundResource(R.drawable.style_points_orange);
                         }
                         // Определяем правильные ответы и закрашиваем прогресс цветом лайм - конец
                     }
@@ -331,7 +325,7 @@ public class Level_4 extends AppCompatActivity {
                         // Определяем правильные ответы и закрашиваем прогресс цветом лайм - начало
                         for (int i = 0; i < count; i++) {
                             TextView tv = findViewById(progress[i]);
-                            tv.setBackgroundResource(R.drawable.style_points_lime);
+                            tv.setBackgroundResource(R.drawable.style_points_orange);
                         }
                         // Определяем правильные ответы и закрашиваем прогресс цветом лайм - конец
                     } else {
@@ -357,7 +351,7 @@ public class Level_4 extends AppCompatActivity {
                         // Определяем правильные ответы и закрашиваем прогресс цветом лайм - начало
                         for (int i = 0; i < count; i++) {
                             TextView tv = findViewById(progress[i]);
-                            tv.setBackgroundResource(R.drawable.style_points_lime);
+                            tv.setBackgroundResource(R.drawable.style_points_orange);
                         }
                         // Определяем правильные ответы и закрашиваем прогресс цветом лайм - конец
                     }

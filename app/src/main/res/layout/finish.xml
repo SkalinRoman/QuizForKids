@@ -17,7 +17,17 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:text="@string/finish"
+        android:text="@string/finish_one"
+        android:textColor="@color/brown"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:text="@string/finish_two"
         android:textColor="@color/brown"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -28,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="170dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="200dp"
         android:src="@drawable/finish_game" />

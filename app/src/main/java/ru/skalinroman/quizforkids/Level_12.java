@@ -42,39 +42,37 @@ public class Level_12 extends AppCompatActivity {
         setContentView(R.layout.universal);
 
         // реклама - начало
-        //    MobileAds.initialize(this, "ca-app-pub-4594297867448154~6383231281");
-        //    interstitialAd = new InterstitialAd(this);
-        //    interstitialAd.setAdUnitId("ca-app-pub-4594297867448154/3892799316"); // рекламный блок
-        //    AdRequest adRequest = new AdRequest.Builder().build();
-        //    interstitialAd.loadAd(adRequest);
+        MobileAds.initialize(this, "ca-app-pub-4594297867448154~6383231281");
+        interstitialAd = new InterstitialAd(this);
+        interstitialAd.setAdUnitId("ca-app-pub-4594297867448154/3892799316"); // рекламный блок
+        AdRequest adRequest = new AdRequest.Builder().build();
+        interstitialAd.loadAd(adRequest);
         // реклама - конец
 
         // Закрытие рекламы на крестик - начало
-        //    interstitialAd.setAdListener(new AdListener() {
-        //        @Override
-        //        public void onAdClosed() {
-        //            try {
-        //                switch (transition) {
-        //                    case 0:
-        //                        break;
-        //                    case 1:
-        //                        Intent intent = new Intent(Level_12.this, Finish.class);
-        //                        startActivity(intent);
-        //                        finish();
-        //                        break;
-        //                    case 2:
-        //                        Intent intent1 = new Intent(Level_12.this, GameLevels.class);
-        //                        startActivity(intent1);
-        //                        finish();
-        //                        break;
-        //                    default:
-        //                        break;
-        //                }
-        //            } catch (Exception e) {
-        // пусто
-        //            }
-        //        }
-        //    });
+        interstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                try {
+                    switch (transition) {
+                        case 1:
+                            Intent intent = new Intent(Level_12.this, Level_13.class); // Менять переход на новый уровень тут
+                            startActivity(intent);
+                            finish();
+                            break;
+                        case 2:
+                            Intent intent1 = new Intent(Level_12.this, GameLevels.class);
+                            startActivity(intent1);
+                            finish();
+                            break;
+                        default:
+                            break;
+                    }
+                } catch (Exception e) {
+                    // пусто
+                }
+            }
+        });
         // Закрытие рекламы на крестик - конец
 
         // Создаем переменную text_levels
@@ -87,12 +85,9 @@ public class Level_12 extends AppCompatActivity {
         final ImageView img_right = (ImageView) findViewById(R.id.amg_right);
         img_right.setClipToOutline(true);   // Код, который скругляет углы правой картинки
 
-        // Путь к TextView
-        final TextView text_left = findViewById(R.id.text_left);
-
         // Устанавливаем фон - начало
         ImageView background = (ImageView) findViewById(R.id.background);
-        background.setImageResource(R.drawable.background_level_three);
+        background.setImageResource(R.drawable.background_level_12);
         // Устанавливаем фон - конец
 
         // Устанавливае описание задания - начало
@@ -101,11 +96,11 @@ public class Level_12 extends AppCompatActivity {
         // Устанавливае описание задания - конец
 
         // Вызов диалогового окна в конце игры
-        dialogEnd = new Dialog(this);  // Создаем новое диалоговое окно
+        dialogEnd = new Dialog(this); // Создаем новое диалоговое окно
         dialogEnd.requestWindowFeature(Window.FEATURE_NO_TITLE); // Скрываем заголовок
         dialogEnd.setContentView(R.layout.dialog_end); // Путь к макету диалогового окна
         dialogEnd.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT)); // Прозрачный фон диалогового окна
-        dialogEnd.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
+        dialogEnd.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT); // Растягиваем на весь экран
         dialogEnd.setCancelable(false); // Окно нельзя закрыть системной кнопкой назад
 
         // Интересный факт - начало
@@ -118,19 +113,19 @@ public class Level_12 extends AppCompatActivity {
         button_continue_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //        if (interstitialAd.isLoaded()) {
-                //            transition = 1;
-                //            interstitialAd.show(); // Показать рекламу
-                //        } else {
-                try {
-                    Intent intent = new Intent(Level_12.this, Finish.class); // менять переход на новый уровень тут
-                    startActivity(intent);
-                    finish();
-                } catch (Exception e) {
+                if (interstitialAd.isLoaded()) {
+                    transition = 1;
+                    interstitialAd.show(); // Показать рекламу
+                } else {
+                    try {
+                        Intent intent = new Intent(Level_12.this, Level_13.class); // Менять переход на новый уровень тут
+                        startActivity(intent);
+                        finish();
+                    } catch (Exception e) {
+                    }
+                    dialogEnd.dismiss(); // Закрываем диалоговое окно
                 }
-                dialogEnd.dismiss(); // Закрываем диалоговое окно
             }
-            //    }
         });
         // Кнопка "Продолжить" диалоговое окно - конец
 
@@ -140,19 +135,19 @@ public class Level_12 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Обрабатываем нажатие кнопка "Назад" - начало
-                //        if (interstitialAd.isLoaded()) {
-                //            transition = 2;
-                //           interstitialAd.show(); // Показать рекламу
-                //        } else {
-                try {
-                    Intent intent = new Intent(Level_12.this, GameLevels.class);
-                    startActivity(intent);
-                    finish();
-                } catch (Exception e) {
+                if (interstitialAd.isLoaded()) {
+                    transition = 2;
+                    interstitialAd.show(); // Показать рекламу
+                } else {
+                    try {
+                        Intent intent = new Intent(Level_12.this, GameLevels.class);
+                        startActivity(intent);
+                        finish();
+                    } catch (Exception e) {
+                    }
+                    // Обрабатываем нажатие кнопка "Назад" - конец
                 }
-                // Обрабатываем нажатие кнопка "Назад" - конец
             }
-            //    }
         });
         // Кнопка "Назад" - конец
 
@@ -230,7 +225,7 @@ public class Level_12 extends AppCompatActivity {
                         // Определяем правильные ответы и закрашиваем прогресс цветом лайм - начало
                         for (int i = 0; i < count; i++) {
                             TextView tv = findViewById(progress[i]);
-                            tv.setBackgroundResource(R.drawable.style_points_lime);
+                            tv.setBackgroundResource(R.drawable.style_points_orange);
                         }
                         // Определяем правильные ответы и закрашиваем прогресс цветом лайм - конец
                     } else {
@@ -256,7 +251,7 @@ public class Level_12 extends AppCompatActivity {
                         // Определяем правильные ответы и закрашиваем прогресс цветом лайм - начало
                         for (int i = 0; i < count; i++) {
                             TextView tv = findViewById(progress[i]);
-                            tv.setBackgroundResource(R.drawable.style_points_lime);
+                            tv.setBackgroundResource(R.drawable.style_points_orange);
                         }
                         // Определяем правильные ответы и закрашиваем прогресс цветом лайм - конец
                     }
@@ -330,7 +325,7 @@ public class Level_12 extends AppCompatActivity {
                         // Определяем правильные ответы и закрашиваем прогресс цветом лайм - начало
                         for (int i = 0; i < count; i++) {
                             TextView tv = findViewById(progress[i]);
-                            tv.setBackgroundResource(R.drawable.style_points_lime);
+                            tv.setBackgroundResource(R.drawable.style_points_orange);
                         }
                         // Определяем правильные ответы и закрашиваем прогресс цветом лайм - конец
                     } else {
@@ -356,7 +351,7 @@ public class Level_12 extends AppCompatActivity {
                         // Определяем правильные ответы и закрашиваем прогресс цветом лайм - начало
                         for (int i = 0; i < count; i++) {
                             TextView tv = findViewById(progress[i]);
-                            tv.setBackgroundResource(R.drawable.style_points_lime);
+                            tv.setBackgroundResource(R.drawable.style_points_orange);
                         }
                         // Определяем правильные ответы и закрашиваем прогресс цветом лайм - конец
                     }
@@ -401,17 +396,17 @@ public class Level_12 extends AppCompatActivity {
     // Системная кнопка "Назад" - начало
     @Override
     public void onBackPressed() {
-        //    if (interstitialAd.isLoaded()) {
-        //        transition = 2;
-        //        interstitialAd.show(); // Показать рекламу
-        //    } else {
-        try {
-            Intent intent = new Intent(Level_12.this, GameLevels.class);
-            startActivity(intent);
-            finish();
-        } catch (Exception e) {
+        if (interstitialAd.isLoaded()) {
+            transition = 2;
+            interstitialAd.show(); // Показать рекламу
+        } else {
+            try {
+                Intent intent = new Intent(Level_12.this, GameLevels.class);
+                startActivity(intent);
+                finish();
+            } catch (Exception e) {
+            }
         }
-        //    }
     }
     // Системная кнопка "Назад" - конец
 }

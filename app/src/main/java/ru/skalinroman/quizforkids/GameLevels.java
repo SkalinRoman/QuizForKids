@@ -265,9 +265,66 @@ public class GameLevels extends AppCompatActivity {
         });
         // Кнопка для перехода на 12 уровень - конец
 
-        // Кнопка уровеня "уже скоро..." - начало
+        // Кнопка для перехода на 13 уровень - начало
         TextView textView13 = (TextView) findViewById(R.id.textView_13);
         textView13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    if (level >= 13) {
+                        Intent intent = new Intent(GameLevels.this, Level_13.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        // пусто
+                    }
+                } catch (Exception e) {
+                }
+            }
+        });
+        // Кнопка для перехода на 13 уровень - конец
+
+        // Кнопка для перехода на 14 уровень - начало
+        TextView textView14 = (TextView) findViewById(R.id.textView_14);
+        textView14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    if (level >= 14) {
+                        Intent intent = new Intent(GameLevels.this, Level_14.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        // пусто
+                    }
+                } catch (Exception e) {
+                }
+            }
+        });
+        // Кнопка для перехода на 14 уровень - конец
+
+        // Кнопка для перехода на 15 уровень - начало
+        TextView textView15 = (TextView) findViewById(R.id.textView_15);
+        textView15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    if (level >= 15) {
+                        Intent intent = new Intent(GameLevels.this, Level_15.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        // пусто
+                    }
+                } catch (Exception e) {
+                }
+            }
+        });
+        // Кнопка для перехода на 15 уровень - конец
+
+        // Кнопка уровеня "уже скоро..." - начало
+        TextView textView16 = (TextView) findViewById(R.id.textView_16);
+        textView16.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
@@ -292,7 +349,11 @@ public class GameLevels extends AppCompatActivity {
                 R.id.textView_10,
                 R.id.textView_11,
                 R.id.textView_12,
-                R.id.textView_13
+                R.id.textView_13,
+                R.id.textView_14,
+                R.id.textView_15,
+                R.id.textView_16
+
         };
 
         for (int i = 1; i < level; i++) {
