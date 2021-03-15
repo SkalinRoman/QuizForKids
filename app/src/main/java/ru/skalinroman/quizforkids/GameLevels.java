@@ -4,12 +4,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class GameLevels extends AppCompatActivity {
@@ -322,9 +319,47 @@ public class GameLevels extends AppCompatActivity {
         });
         // Кнопка для перехода на 15 уровень - конец
 
-        // Кнопка уровеня "уже скоро..." - начало
+        // Кнопка для перехода на 16 уровень - начало
         TextView textView16 = (TextView) findViewById(R.id.textView_16);
         textView16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    if (level >= 16) {
+                        Intent intent = new Intent(GameLevels.this, Level_16.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        // пусто
+                    }
+                } catch (Exception e) {
+                }
+            }
+        });
+        // Кнопка для перехода на 16 уровень - конец
+
+        // Кнопка для перехода на 17 уровень - начало
+        TextView textView17 = (TextView) findViewById(R.id.textView_17);
+        textView17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    if (level >= 17) {
+                        Intent intent = new Intent(GameLevels.this, Level_17.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        // пусто
+                    }
+                } catch (Exception e) {
+                }
+            }
+        });
+        // Кнопка для перехода на 17 уровень - конец
+
+        // Кнопка уровеня "уже скоро..." - начало
+        TextView textView18 = (TextView) findViewById(R.id.textView_18);
+        textView18.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
@@ -352,8 +387,9 @@ public class GameLevels extends AppCompatActivity {
                 R.id.textView_13,
                 R.id.textView_14,
                 R.id.textView_15,
-                R.id.textView_16
-
+                R.id.textView_16,
+                R.id.textView_17,
+                R.id.textView_18
         };
 
         for (int i = 1; i < level; i++) {

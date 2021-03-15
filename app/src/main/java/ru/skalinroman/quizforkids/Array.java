@@ -373,4 +373,54 @@ public class Array {
             R.drawable.img_15_t_ten
     };
     // Массив для 15 уровня - конец
+
+    // Массив для 16 уровня - начало
+    final int[] images16 = {
+            R.drawable.img_16_f_one,
+            R.drawable.img_16_t_one,
+            R.drawable.img_16_f_two,
+            R.drawable.img_16_t_two,
+            R.drawable.img_16_f_three,
+            R.drawable.img_16_t_three,
+            R.drawable.img_16_f_four,
+            R.drawable.img_16_t_four,
+            R.drawable.img_16_f_five,
+            R.drawable.img_16_t_five,
+            R.drawable.img_16_f_six,
+            R.drawable.img_16_t_six,
+            R.drawable.img_16_f_seven,
+            R.drawable.img_16_t_seven,
+            R.drawable.img_16_f_eight,
+            R.drawable.img_16_t_eight,
+            R.drawable.img_16_f_nine,
+            R.drawable.img_16_t_nine,
+            R.drawable.img_16_f_ten,
+            R.drawable.img_16_t_ten
+    };
+    // Массив для 16 уровня - конец
+
+    // Массив для 17 уровня - начало
+    final int[] images17 = {
+            R.drawable.img_17_f_one,
+            R.drawable.img_17_t_one,
+            R.drawable.img_17_f_two,
+            R.drawable.img_17_t_two,
+            R.drawable.img_17_f_three,
+            R.drawable.img_17_t_three,
+            R.drawable.img_17_f_four,
+            R.drawable.img_17_t_four,
+            R.drawable.img_17_f_five,
+            R.drawable.img_17_t_five,
+            R.drawable.img_17_f_six,
+            R.drawable.img_17_t_six,
+            R.drawable.img_17_f_seven,
+            R.drawable.img_17_t_seven,
+            R.drawable.img_17_f_eight,
+            R.drawable.img_17_t_eight,
+            R.drawable.img_17_f_nine,
+            R.drawable.img_17_t_nine,
+            R.drawable.img_17_f_ten,
+            R.drawable.img_17_t_ten
+    };
+    // Массив для 17 уровня - конец
 }

@@ -20,7 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
-public class Level_15 extends AppCompatActivity {
+public class Level_17 extends AppCompatActivity {
 
     public int numberLeft; // Переменная для левой картинки
     public int numberRight; // Переменная для правой картинки
@@ -36,7 +36,7 @@ public class Level_15 extends AppCompatActivity {
 
         // Создаем переменную text_levels
         TextView text_levels = findViewById(R.id.text_levels);
-        text_levels.setText(R.string.level15);  // Установили текст
+        text_levels.setText(R.string.level17);  // Установили текст
 
         final ImageView img_left = (ImageView) findViewById(R.id.amg_left);
         img_left.setClipToOutline(true);   // Код, который скругляет углы левой картинки
@@ -46,12 +46,12 @@ public class Level_15 extends AppCompatActivity {
 
         // Устанавливаем фон - начало
         ImageView background = (ImageView) findViewById(R.id.background);
-        background.setImageResource(R.drawable.background_level_15);
+        background.setImageResource(R.drawable.background_level_17);
         // Устанавливаем фон - конец
 
         // Устанавливае описание задания - начало
         TextView textDescription = (TextView) findViewById(R.id.exercise);
-        textDescription.setText(R.string.level_15);
+        textDescription.setText(R.string.level_17);
         // Устанавливае описание задания - конец
 
         // Вызов диалогового окна в конце игры
@@ -64,7 +64,7 @@ public class Level_15 extends AppCompatActivity {
 
         // Интересный факт - начало
         TextView textDescriptionEnd = (TextView) dialogEnd.findViewById(R.id.level_description_end);
-        textDescriptionEnd.setText(R.string.level_15_end);
+        textDescriptionEnd.setText(R.string.level_17_end);
         // Интересный факт - конец
 
         // Кнопка "Продолжить" диалоговое окно - начало
@@ -73,7 +73,7 @@ public class Level_15 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(Level_15.this, Level_16.class); // Менять переход на новый уровень тут
+                    Intent intent = new Intent(Level_17.this, Finish.class); // Менять переход на новый уровень тут
                     startActivity(intent);
                     finish();
                 } catch (Exception e) {
@@ -89,7 +89,7 @@ public class Level_15 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(Level_15.this, GameLevels.class);
+                    Intent intent = new Intent(Level_17.this, GameLevels.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception e) {
@@ -125,11 +125,11 @@ public class Level_15 extends AppCompatActivity {
         // Массив для прогресса игры - конец
 
         // Подключаем анимацию - начало
-        final Animation a = AnimationUtils.loadAnimation(Level_15.this, R.anim.alpha);
+        final Animation a = AnimationUtils.loadAnimation(Level_17.this, R.anim.alpha);
         // Подключаем анимацию - конец
 
         numberLeft = random.nextInt(20); // Генерируем случайное число
-        img_left.setImageResource(array.images15[numberLeft]); // Достаем из массива картинку
+        img_left.setImageResource(array.images17[numberLeft]); // Достаем из массива картинку
 
         numberRight = random.nextInt(20); // Генерируем случайное число
         // Цикл с предусловием, проверяющий равенство чисел - начало
@@ -138,7 +138,7 @@ public class Level_15 extends AppCompatActivity {
         }
         // Цикл с предусловием, проверяющий равенство чисел - конец
 
-        img_right.setImageResource(array.images15[numberRight]); // Достаем из массива картинку
+        img_right.setImageResource(array.images17[numberRight]); // Достаем из массива картинку
 
         // Обрабатываем нажатие левой картинки - начало
         img_left.setOnTouchListener(new View.OnTouchListener() {
@@ -208,17 +208,17 @@ public class Level_15 extends AppCompatActivity {
                         // ВЫХОД ИЗ УРОВНЯ
                         SharedPreferences save = getSharedPreferences("Save", MODE_PRIVATE);
                         final int level = save.getInt("Level", 1);
-                        if (level > 15) {
+                        if (level > 17) {
                             // пусто
                         } else {
                             SharedPreferences.Editor editor = save.edit();
-                            editor.putInt("Level", 16);
+                            editor.putInt("Level", 18);
                             editor.commit();
                         }
                         dialogEnd.show();
                     } else {
                         numberLeft = random.nextInt(20); // Генерируем случайное число
-                        img_left.setImageResource(array.images15[numberLeft]); // Достаем из массива картинку
+                        img_left.setImageResource(array.images17[numberLeft]); // Достаем из массива картинку
                         img_left.startAnimation(a);
 
                         numberRight = random.nextInt(20); // Генерируем случайное число
@@ -228,7 +228,7 @@ public class Level_15 extends AppCompatActivity {
                         }
                         // Цикл с предусловием, проверяющий равенство чисел - конец
 
-                        img_right.setImageResource(array.images15[numberRight]); // Достаем из массива картинку
+                        img_right.setImageResource(array.images17[numberRight]); // Достаем из массива картинку
                         img_right.startAnimation(a);
 
                         img_right.setEnabled(true); // Включаем обратно правую картинку
@@ -308,17 +308,17 @@ public class Level_15 extends AppCompatActivity {
                         // ВЫХОД ИЗ УРОВНЯ
                         SharedPreferences save = getSharedPreferences("Save", MODE_PRIVATE);
                         final int level = save.getInt("Level", 1);
-                        if (level > 15) {
+                        if (level > 17) {
                             // пусто
                         } else {
                             SharedPreferences.Editor editor = save.edit();
-                            editor.putInt("Level", 16);
+                            editor.putInt("Level", 18);
                             editor.commit();
                         }
                         dialogEnd.show();
                     } else {
                         numberLeft = random.nextInt(20); // Генерируем случайное число
-                        img_left.setImageResource(array.images15[numberLeft]); // Достаем из массива картинку
+                        img_left.setImageResource(array.images17[numberLeft]); // Достаем из массива картинку
                         img_left.startAnimation(a);
 
                         numberRight = random.nextInt(20); // Генерируем случайное число
@@ -328,7 +328,7 @@ public class Level_15 extends AppCompatActivity {
                         }
                         // Цикл с предусловием, проверяющий равенство чисел - конец
 
-                        img_right.setImageResource(array.images15[numberRight]); // Достаем из массива картинку
+                        img_right.setImageResource(array.images17[numberRight]); // Достаем из массива картинку
                         img_right.startAnimation(a);
 
                         img_left.setEnabled(true); // Включаем обратно левую картинку
@@ -345,7 +345,7 @@ public class Level_15 extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         try {
-            Intent intent = new Intent(Level_15.this, GameLevels.class);
+            Intent intent = new Intent(Level_17.this, GameLevels.class);
             startActivity(intent);
             finish();
         } catch (Exception e) {
